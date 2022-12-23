@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header/Header";
+import Hero from "../components/Hero/Hero";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +16,10 @@ export default function Home() {
         <link rel="icon" href="/logo.ico" />
       </Head>
       <main>
-        {/* Header */}
+        {/* Header-section */}
         <Header />
+        {/* Hero-section */}
+        <Hero />
       </main>
     </>
   );
