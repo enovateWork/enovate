@@ -8,6 +8,9 @@
   padding: 2px;
   margin: 16px 48px;
   border-radius: 16px;
+  position: fixed;
+  left: 0;
+  right: 0;
 }
 .header-container {
   background-color: white;
@@ -15,6 +18,7 @@
   align-items: center;
   padding: 16px 24px;
   border-radius: 16px;
+  /* position: fixed; */
 }
 .right-section {
   margin-left: auto;

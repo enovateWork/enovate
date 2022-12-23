@@ -19,6 +19,7 @@ export default function Home() {
         {/* Header-section */}
         <Header />
         {/* Hero-section */}
+        <div className={styles["page-content"]}></div>
         <Hero />
       </main>
     </>

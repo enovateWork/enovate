@@ -1,5 +1,5 @@
 .hero-container {
-  margin: 24px 48px;
+  margin: 0px 48px 24px 48px;
   padding: 64px 24px;
   background: url("../public/gradient.png") no-repeat center center fixed;
   background-size: cover;
