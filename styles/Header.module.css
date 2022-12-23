@@ -11,6 +11,7 @@
   position: fixed;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 .header-container {
   background-color: white;

@@ -1,0 +1,26 @@
+.video_section_container {
+  position: relative;
+  margin: 96px 48px;
+  padding: 48px 0px;
+  border-radius: 24px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../public/enovatePattern.png"), #8b98ff;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.video-title {
+  font-size: 64px;
+  font-family: "Satoshi", sans-serif;
+  line-height: 86.4px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+.video_container {
+  margin-top: 48px;
+}
