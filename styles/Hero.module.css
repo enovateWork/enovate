@@ -43,3 +43,27 @@
 .arrow-container {
   margin-left: 16px;
 }
+.bottom-text {
+  display: flex;
+  align-items: center;
+}
+.get-fascinated {
+  font-family: "Satoshi", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+.hero-bottom {
+  display: flex;
+  align-items: baseline;
+  /* margin-left: auto; */
+  /* background-color: red; */
+}
+.bottom-text {
+  margin-left: 40%;
+}
+.star-container {
+  margin-left: auto;
+}
