@@ -1,0 +1,25 @@
+.card-container {
+  width: 204px;
+}
+.icon-container {
+  width: 240px;
+  height: 300px;
+  border: 1px solid black;
+  background-color: red;
+}
+.expertise-title {
+  font-family: "satoshi", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-top: 16px;
+}
+.expertise-details {
+  font-family: "Satoshi", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #767676;
+  margin-top: 8px;
+}

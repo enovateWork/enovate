@@ -1,10 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import styles from "../../styles/Hero.module.css";
-import arrowRight from "../../public/arrow-right.svg";
-import arrowBg from "../../public/Arrow_bg.svg";
-import mouse from "../../public/mouse-solid.svg";
-import star from "../../public/star.svg";
+import styles from "../styles/Hero.module.css";
+import arrowRight from "../public/arrow-right.svg";
+import mouse from "../public/mouse-solid.svg";
+import star from "../public/star.svg";
 
 function Hero() {
   return (

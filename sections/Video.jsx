@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import styles from "../../styles/Video.module.css";
-import player from "../../public/Player.png";
+import styles from "../styles/Video.module.css";
+import player from "../public/Player.png";
 
 function Video() {
   return (
