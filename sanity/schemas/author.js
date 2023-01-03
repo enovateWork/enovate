@@ -33,6 +33,11 @@ export default defineType({
       title: 'Finished',
       type: 'boolean',
     }),
+    defineField({
+      name: 'width',
+      title: 'Width',
+      type: 'number',
+    }),
     // defineField({
     //   name: 'year',
     //   title: 'Year',

@@ -32,6 +32,7 @@
   font-size: 14px;
   line-height: 18.9px;
   color: #313131;
+  font-feature-settings: "ss03" on;
 }
 .time-gray {
   color: #767676;
@@ -47,6 +48,7 @@
   font-size: 16px;
   line-height: 21.6px;
   color: #767676;
+  font-feature-settings: "ss03" on;
 }
 .explore_svg_container {
   padding: 6px 10px;
