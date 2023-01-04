@@ -6,6 +6,7 @@ import Video from "../sections/Video";
 import Expertise from "../sections/expertise";
 import Projects from "../sections/Projects";
 import BuildingProcess from "../sections/BuildingProcess";
+import Faq from "../sections/Faq";
 // import client from "../lib/sanityClient";
 
 export default function Home({ projects }) {
@@ -27,6 +28,7 @@ export default function Home({ projects }) {
           <Expertise />
           <Projects />
           <BuildingProcess />
+          <Faq />
         </div>
       </main>
     </>
