@@ -7,6 +7,7 @@ import Expertise from "../sections/expertise";
 import Projects from "../sections/Projects";
 import BuildingProcess from "../sections/BuildingProcess";
 import Faq from "../sections/Faq";
+import Footer from "../sections/Footer";
 // import client from "../lib/sanityClient";
 
 export default function Home({ projects }) {
@@ -29,6 +30,7 @@ export default function Home({ projects }) {
           <Projects />
           <BuildingProcess />
           <Faq />
+          <Footer />
         </div>
       </main>
     </>

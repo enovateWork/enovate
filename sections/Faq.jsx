@@ -3,11 +3,18 @@ import React, { useState } from "react";
 import { faq } from "../faq";
 import Image from "next/image";
 import plus from "../public/plus.svg";
+import minus from "../public/minus.svg";
 import chat from "../public/chat.svg";
 import arrowRight from "../public/arrow-right-gray.svg";
 
 function Faq() {
-  const [showAnswer, setShowAnswer] = useState(false);
+  const [showAnswer, setShowAnswer] = useState({});
+  const toggleAnswer = (id) => {
+    setShowAnswer({
+      //   ...showAnswer,
+      [id]: !showAnswer[id],
+    });
+  };
   return (
     <div className={styles["section-container"]}>
       <h4 className={styles["section-title"]}>Frequently asked questions</h4>
@@ -15,16 +22,23 @@ function Faq() {
         <div className={styles["left-section"]}>
           {faq.map((item) => {
             return (
-              <div key={item.id} className={styles["faq-container"]}>
+              <div
+                key={item.id}
+                className={styles["faq-container"]}
+                onClick={() => toggleAnswer(item.id)}
+              >
                 <div className={styles["question-top"]}>
                   <p className={styles["question"]}>{item.question}</p>
-                  <Image
-                    src={plus}
-                    alt="plus"
-                    onClick={() => setShowAnswer(!showAnswer)}
-                  />
+                  {showAnswer[item.id] ? (
+                    <Image src={minus} alt="minus" />
+                  ) : (
+                    <Image src={plus} alt="plus" />
+                  )}
                 </div>
-                <p className={styles.answer}> {showAnswer && item.answer} </p>
+                <p className={styles.answer}>
+                  {" "}
+                  {showAnswer[item.id] && item.answer}{" "}
+                </p>
               </div>
             );
           })}
@@ -39,7 +53,7 @@ function Faq() {
             lacus dignissim lacus, sed feugiat dui odio.{" "}
           </p>
           <button className={styles["email-btn"]}>
-            Shoot us an mail{" "}
+            Shoot us an email{" "}
             <span className={styles["arrow-right"]}>
               {" "}
               <Image src={arrowRight} alt="arrow-right" />{" "}
