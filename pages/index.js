@@ -3,6 +3,7 @@ import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
+import Video from "../components/Video/Video";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +20,10 @@ export default function Home() {
         {/* Header-section */}
         <Header />
         {/* Hero-section */}
-        <div className={styles["page-content"]}></div>
-        <Hero />
+        <div className={styles["page-content"]}>
+          <Hero />
+          <Video />
+        </div>
       </main>
     </>
   );
