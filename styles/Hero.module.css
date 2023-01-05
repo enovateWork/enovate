@@ -11,6 +11,7 @@
   line-height: 135px;
   font-weight: 700;
   color: white;
+  font-feature-settings: "ss03" on;
 }
 .hero-subtitle {
   width: 800px;
@@ -21,6 +22,7 @@
   font-size: 24px;
   line-height: 32px;
   color: white;
+  font-feature-settings: "ss03" on;
 }
 .hero-btn {
   font-family: "satoshi", sans-serif;
@@ -36,6 +38,7 @@
   background: linear-gradient(90deg, #ffffff 0%, rgba(249, 249, 249, 0.8) 100%);
   border-radius: 24px;
   margin-top: 64px;
+  font-feature-settings: "ss03" on;
 }
 .bg_arrow {
   margin-top: 64px;
@@ -53,6 +56,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
+  font-feature-settings: "ss03" on;
   color: white;
 }
 .hero-bottom {

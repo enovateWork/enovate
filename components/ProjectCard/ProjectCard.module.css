@@ -1,0 +1,108 @@
+.card-container {
+  margin-top: 36px;
+}
+
+.image-container {
+  position: relative;
+  height: 480px;
+}
+
+.project-image:hover {
+  transform: scale(0.97);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+.project-name {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31.2px;
+  font-feature-settings: "ss03" on;
+  color: #313131;
+}
+.under-lay {
+  background: linear-gradient(
+    89.97deg,
+    rgba(146, 235, 255, 0.3) 0.02%,
+    rgba(103, 254, 155, 0.3) 50.31%,
+    rgba(139, 152, 255, 0.3) 99.98%
+  );
+  padding: 1.5px;
+  border-radius: 16px;
+  margin-left: 8px;
+}
+.tags {
+  display: flex;
+}
+.tag {
+  padding: 4px 16px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  border-radius: 14.4px;
+  color: #313131;
+  background-color: #f9f9f9;
+}
+
+.project-description {
+  position: absolute;
+  width: 320px;
+  height: fit-content;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 24px rgba(118, 118, 118, 0.2);
+  backdrop-filter: blur(4px);
+  padding: 16px;
+  border-radius: 16px;
+  bottom: 24px;
+  right: 24px;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.year {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.8px;
+  padding: 4px 16px;
+
+  border: 1px solid #767676;
+  border-radius: 24px;
+}
+.arrow {
+  margin-left: 10px;
+}
+.view-project {
+  display: flex;
+  align-items: center;
+  border: 1px solid #767676;
+  border-radius: 24px;
+  padding: 4px 8px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.description {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22.4px;
+  font-feature-settings: "ss03" on;
+  color: #313131;
+  margin-top: 16px;
+}

@@ -81,7 +81,7 @@ function Expertise() {
         </div>
       </div>
       <div className={styles["gradient-container"]}>
-        <Image src={gradient} alt="gradient" width={1280} />
+        <Image src={gradient} alt="gradient" width={1280} priority />
         <div className={styles["star_1"]}>
           <Image src={star1} alt="star_1" />
         </div>

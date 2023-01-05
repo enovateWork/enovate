@@ -1,14 +1,13 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Header from "../sections/Header";
 import Hero from "../sections/Hero";
 import Video from "../sections/Video";
 import Expertise from "../sections/expertise";
+import Projects from "../sections/Projects";
+// import client from "../lib/sanityClient";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function Home({ projects }) {
   return (
     <>
       <Head>
@@ -25,8 +24,24 @@ export default function Home() {
           <Hero />
           <Video />
           <Expertise />
+          <Projects />
         </div>
       </main>
     </>
   );
 }
+
+// export async function getStaticProps() {
+//   const projects = await client.fetch(
+//     `
+//     *[_type == "project"]{
+//       ...
+//   }
+//     `
+//   );
+//   return {
+//     props: {
+//       projects,
+//     },
+//   };
+// }
