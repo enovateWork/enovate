@@ -1,9 +1,10 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
-import Header from "../components/Header/Header";
-import Hero from "../components/Hero/Hero";
-import Video from "../components/Video/Video";
+import Header from "../sections/Header";
+import Hero from "../sections/Hero";
+import Video from "../sections/Video";
+import Expertise from "../sections/expertise";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function Home() {
         <div className={styles["page-content"]}>
           <Hero />
           <Video />
+          <Expertise />
         </div>
       </main>
     </>

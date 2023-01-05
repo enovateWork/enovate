@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import styles from "../../styles/Header.module.css";
-import logo from "../../public/LogoDescription.svg";
-import exploreSVG from "../../public/explore.svg";
+import styles from "../styles/Header.module.css";
+import logo from "../public/LogoDescription.svg";
+import exploreSVG from "../public/explore.svg";
 import Clock from "react-live-clock";
 
 function Header() {
