@@ -5,6 +5,7 @@ import Hero from "../sections/Hero";
 import Video from "../sections/Video";
 import Expertise from "../sections/expertise";
 import Projects from "../sections/Projects";
+import BuildingProcess from "../sections/BuildingProcess";
 // import client from "../lib/sanityClient";
 
 export default function Home({ projects }) {
@@ -25,6 +26,7 @@ export default function Home({ projects }) {
           <Video />
           <Expertise />
           <Projects />
+          <BuildingProcess />
         </div>
       </main>
     </>
