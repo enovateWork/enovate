@@ -1,0 +1,48 @@
+.header-container-wrapper {
+  background: linear-gradient(
+    89.97deg,
+    rgba(146, 235, 255, 0.3) 0.02%,
+    rgba(103, 254, 155, 0.3) 50.31%,
+    rgba(139, 152, 255, 0.3) 99.98%
+  );
+  padding: 2px;
+  margin: 16px 48px;
+  border-radius: 16px;
+}
+.header-container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 16px;
+}
+.right-section {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.local-time {
+  font-family: "satoshi", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18.9px;
+  color: #313131;
+}
+.time-gray {
+  color: #767676;
+}
+.explore-container {
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
+}
+.explore {
+  font-family: "satoshi", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.6px;
+  color: #767676;
+}
+.explore_svg_container {
+  padding: 6px 10px;
+}
