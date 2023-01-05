@@ -19,8 +19,7 @@ function Header() {
             <h3 className={styles["local-time"]}>
               {" "}
               <span className={styles["time-gray"]}>Lagos, Nigeria</span> -{" "}
-              <Clock format={"HH:MM"} timezone={"NG"} />{" "}
-              <span className={styles["time-gray"]}>PM</span>{" "}
+              <Clock format={"HH:mm"} timezone={"Africa/Lagos"} />{" "}
             </h3>
           </div>
           <div className={styles["explore-container"]}>
