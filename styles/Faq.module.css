@@ -19,7 +19,7 @@
 .faq-container {
   padding: 24px 0px;
   border-bottom: 2px solid #f9f9f9;
-  width: 700px;
+  width: 600px;
 }
 .question {
   font-family: "Satoshi";
@@ -48,7 +48,7 @@
   border-radius: 16px;
 }
 .have-question {
-  font-family: "BL Melody", sans-serif;
+  font-family: "Satoshi", sans-serif;
   width: 250px;
   font-style: normal;
   font-weight: 500;
@@ -60,9 +60,21 @@
   text-align: center;
   color: #ffffff;
 }
+.answer {
+  width: 450px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  font-feature-settings: "ss03" on;
+  color: #767676;
+}
 .details {
   width: 250px;
-  font-family: "BL Melody", sans-serif;
+  font-family: "Satoshi", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

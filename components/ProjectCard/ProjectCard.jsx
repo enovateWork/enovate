@@ -51,7 +51,7 @@ function ProjectCard({
         <div className={styles["tags"]}>
           {projectTag.map((tag) => {
             return (
-              <div className={styles["under-lay"]} key={1}>
+              <div className={styles["under-lay"]} key={tag}>
                 <p className={styles["tag"]}>{tag}</p>
               </div>
             );

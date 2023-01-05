@@ -40,7 +40,9 @@
 .explore-container {
   display: flex;
   align-items: center;
-  margin-left: 64px;
+}
+.explore-container:hover {
+  cursor: pointer;
 }
 .explore {
   font-family: "satoshi", sans-serif;
@@ -52,4 +54,11 @@
 }
 .explore_svg_container {
   padding: 6px 10px;
+  margin-left: 4px;
+}
+.explore_white_container {
+  background-color: #767676;
+  border-radius: 12px;
+  padding: 6px 10px;
+  margin-left: 4px;
 }
