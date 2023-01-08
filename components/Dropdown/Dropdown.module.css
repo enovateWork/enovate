@@ -1,0 +1,90 @@
+.dropdown-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  width: 350px;
+  height: fit-content;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.explore {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #313131;
+}
+.close {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  margin-right: 16px;
+  color: #767676;
+}
+.control-center {
+  display: flex;
+  align-items: center;
+}
+.control-center:hover {
+  cursor: pointer;
+}
+.links {
+  margin-top: 36px;
+}
+.link,
+.socials-link {
+  list-style: none;
+}
+.link {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28.8px;
+  margin-top: 16px;
+  font-feature-settings: "ss03" on;
+  color: #313131;
+}
+.socials-link {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "ss03" on;
+  margin-top: 8px;
+  color: #767676;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background: linear-gradient(90deg, #92ebff 0%, #6ddbf3 100%);
+  border-radius: 16px;
+  padding: 16px;
+  border: none;
+  color: white;
+}
