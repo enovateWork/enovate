@@ -4,12 +4,18 @@ import Header from "../sections/Header";
 import styles from "../styles/about.module.css";
 import { teamMembers } from "../teamMembers";
 import vector from "../public/swiggly.png";
+import { useDispatch } from "react-redux";
+import { dropDownAction } from "../redux/slice/dropDownSlice";
 
-function about() {
+function About() {
+  const dispatch = useDispatch();
+  const closeDropDown = () => {
+    dispatch(dropDownAction.toggle());
+  };
   return (
     <>
       <Header />
-      <div className={styles["page-container"]}>
+      <div onClick={closeDropDown} className={styles["page-container"]}>
         <div className={styles.top}>
           <h3 className={styles["page-title"]}>About us</h3>
           <p className={styles["about-details"]}>
@@ -50,4 +56,4 @@ function about() {
   );
 }
 
-export default about;
+export default About;
