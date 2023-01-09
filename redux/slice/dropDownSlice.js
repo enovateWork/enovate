@@ -11,6 +11,9 @@ const dropDownSlice = createSlice({
     toggle(state) {
       state.dropDownVisible = !state.dropDownVisible;
     },
+    close(state) {
+      state.dropDownVisible = false;
+    },
   },
 });
 

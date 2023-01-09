@@ -6,11 +6,13 @@ import { teamMembers } from "../teamMembers";
 import vector from "../public/swiggly.png";
 import { useDispatch } from "react-redux";
 import { dropDownAction } from "../redux/slice/dropDownSlice";
+import HowWeWork from "../sections/HowWeWork.jsx";
+import Footer from "../sections/Footer";
 
 function About() {
   const dispatch = useDispatch();
   const closeDropDown = () => {
-    dispatch(dropDownAction.toggle());
+    dispatch(dropDownAction.close());
   };
   return (
     <>
@@ -51,6 +53,8 @@ function About() {
         <div className={styles["vector-container"]}>
           <Image src={vector} alt="vector" className={styles.vector} />
         </div>
+        <HowWeWork />
+        <Footer />
       </div>
     </>
   );

@@ -10,11 +10,12 @@ import Faq from "../sections/Faq";
 import Footer from "../sections/Footer";
 import { useDispatch } from "react-redux";
 import { dropDownAction } from "../redux/slice/dropDownSlice";
+import PreFooter from "../sections/PreFooter";
 
 export default function Home({ projects }) {
   const dispatch = useDispatch();
   const closeDropDown = () => {
-    dispatch(dropDownAction.toggle());
+    dispatch(dropDownAction.close());
   };
   return (
     <>
@@ -35,6 +36,7 @@ export default function Home({ projects }) {
           <Projects />
           <BuildingProcess />
           <Faq />
+          <PreFooter />
           <Footer />
         </div>
       </main>

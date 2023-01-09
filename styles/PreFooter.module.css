@@ -1,0 +1,48 @@
+.section-container {
+  margin: 96px 48px;
+  position: relative;
+}
+.vector {
+  width: 1440px;
+  height: 200px;
+  object-fit: contain;
+  margin-top: 96px;
+}
+.deliver-container {
+  background: url("../public/enovatePattern.png"), #7683ee;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  border-radius: 24px;
+  padding: 64px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 86px;
+  font-feature-settings: "ss03" on;
+  color: #ffffff;
+}
+.btn {
+  padding: 16px 24px;
+  margin-top: 24px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  font-feature-settings: "ss03" on;
+  color: #767676;
+  background: linear-gradient(90deg, #ffffff 0%, rgba(249, 249, 249, 0.8) 100%);
+  border-radius: 24px;
+  border: none;
+}
+.arrow {
+  margin-left: 20px;
+}

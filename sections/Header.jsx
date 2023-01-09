@@ -7,6 +7,7 @@ import exploreWhiteSVG from "../public/explore_white.svg";
 import Dropdown from "../components/Dropdown/Dropdown";
 import { useDispatch, useSelector } from "react-redux";
 import { dropDownAction } from "../redux/slice/dropDownSlice";
+import Link from "next/link";
 
 function Header() {
   const [exploreBackground, setExploreBackground] = useState(false);
@@ -22,9 +23,9 @@ function Header() {
       <div className={styles["header-container-wrapper"]}>
         <div className={styles["header-container"]}>
           <div className={styles["left-section"]}>
-            <div className={styles["enovate_logo_container"]}>
+            <Link href="/" className={styles["enovate_logo_container"]}>
               <Image src={logo} alt="Enovate_Logo" />
-            </div>
+            </Link>
           </div>
           <div className={styles["right-section"]}>
             <div
