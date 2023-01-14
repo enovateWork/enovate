@@ -75,7 +75,7 @@ function Footer() {
                 </li>
                 <li className={styles.link}>
                   {" "}
-                  <Link href="/contact-us">Contact</Link>{" "}
+                  <Link href="/contact">Contact</Link>{" "}
                 </li>
                 <li
                   style={{ color: "#767676", fontWeight: 400 }}
