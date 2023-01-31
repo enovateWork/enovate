@@ -1,9 +1,7 @@
 import styles from "../styles/Footer.module.css";
 
 import React from "react";
-import vector from "../public/swiggly.png";
 import Image from "next/image";
-import arrowRight from "../public/arrow-right-gray.svg";
 import enovateLogo from "../public/enovate_logo.svg";
 import star from "../public/star3.svg";
 import mail from "../public/mail.svg";
@@ -14,30 +12,16 @@ import Link from "next/link";
 function Footer() {
   return (
     <>
-      <div className={styles["vector-container"]}>
-        <Image src={vector} alt="vector" className={styles.vector} />
-      </div>
       <div className={styles["section-container"]}>
-        <div className={styles["deliver-container"]}>
-          <h4 className={styles.title}>We deliver what you need</h4>
-          <button className={styles.btn}>
-            {" "}
-            Let&rsquo;s work together{" "}
-            <span className={styles.arrow}>
-              {" "}
-              <Image src={arrowRight} alt="arrow-right" />{" "}
-            </span>{" "}
-          </button>
-        </div>
         <div className={styles["footer-container"]}>
           <div className={styles.top}>
-            <div className={styles["top-left"]}>
+            <Link href="/" className={styles["top-left"]}>
               <Image src={enovateLogo} alt="enovate_logo" />
               <p className={styles["logo-description"]}>
                 A modern agency focused on giving your clients the best
                 experience.
               </p>
-            </div>
+            </Link>
             <div className={styles["top-right"]}>
               <Image src={star} alt="star" />
             </div>
@@ -87,11 +71,11 @@ function Footer() {
               <ul className={styles["footer-links"]}>
                 <li className={styles.link}>
                   {" "}
-                  <Link href="/about-us">About</Link>{" "}
+                  <Link href="/about">About</Link>{" "}
                 </li>
                 <li className={styles.link}>
                   {" "}
-                  <Link href="/contact-us">Contact</Link>{" "}
+                  <Link href="/contact">Contact</Link>{" "}
                 </li>
                 <li
                   style={{ color: "#767676", fontWeight: 400 }}
@@ -134,6 +118,16 @@ function Footer() {
                 </li>
               </ul>
             </div>
+          </div>
+          <div className={styles["copyright-section"]}>
+            <p className={styles.copyright}>
+              {" "}
+              © Enovate 2023. All rights reserved.{" "}
+              <span className={styles["privacy-policy"]}>
+                {" "}
+                <Link href="">Privacy Policy</Link>{" "}
+              </span>{" "}
+            </p>
           </div>
         </div>
       </div>
