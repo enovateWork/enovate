@@ -1,5 +1,6 @@
 .page-container {
   padding-top: 139px;
+  position: relative;
 }
 .top {
   width: 900px;
@@ -32,8 +33,9 @@
   line-height: 65px;
   font-feature-settings: "ss03" on;
   color: #313131;
-  width: 100%;
   text-align: center;
+  margin-top: 96px;
+  margin-bottom: 32px;
 }
 .team-container {
   display: flex;
@@ -41,68 +43,52 @@
   gap: 48px;
   padding-left: 200px;
   padding-right: 200px;
-  margin-top: 96px;
 }
-.member {
-  padding: 8px;
-  background-color: white;
-  border-radius: 16px;
-}
-.image-container {
-  width: 230px;
-  position: relative;
-  margin-top: 32px;
-}
-.under-lay {
-  padding: 2px;
-  background-color: transparent;
-}
-.under-lay:hover {
-  background: linear-gradient(
-    89.97deg,
-    rgba(146, 235, 255, 1) 0.02%,
-    rgba(139, 152, 255, 1) 50.31%,
-    rgba(103, 254, 155, 1) 99.98%
-  );
-  padding: 2px;
-  border-radius: 16px;
-}
-.member-image {
-  object-fit: contain;
-  width: 100%;
-  height: fit-content;
-  border-radius: 8px;
-  background-color: white;
-}
-.member-image:hover {
-  background-color: #7683ee;
-}
-.name {
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 27px;
-  display: flex;
-  align-items: flex-end;
-  font-feature-settings: "ss03" on;
-  color: #313131;
-  margin-top: 8px;
-}
-.position {
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  text-transform: capitalize;
-  font-feature-settings: "ss03" on;
-  color: #767676;
-  margin-top: 8px;
-}
+
 .vector {
   width: 1440px;
   height: 200px;
   object-fit: contain;
   margin-top: 96px;
+}
+
+@media screen and (max-width: 480px) {
+  .page-container {
+    padding: 139px 0px 16px 0px;
+  }
+  .top {
+    width: 100%;
+    margin-top: 16px;
+    padding: 0px 16px;
+  }
+  .page-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+  }
+  .about-details {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .bandwagon {
+    font-size: 28px;
+    margin-top: 48px;
+    line-height: 33.6px;
+    padding: 0px 16px;
+  }
+  .team-container {
+    padding: 0px 16px;
+    width: 100%;
+    gap: 16px;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: unset;
+  }
+  .vector {
+    width: 600px;
+    height: 100px;
+  }
 }

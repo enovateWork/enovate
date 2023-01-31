@@ -15,20 +15,20 @@ export const projects = [
       "Humankind foundation is a non-governmental organization focused on providing developmental solutions to individuals and communities through green energy.",
     imgUrl: humanKind,
     finished: true,
-    width: "670px",
-    tags: ["Web Development", "Web Design"],
+    width: "800px",
+    tags: ["Web Development", "Brand Identity Design"],
   },
-  {
-    id: "2",
-    name: "Deelaa",
-    year: "2022",
-    description:
-      "Deelaa makes it easy for fun seekers to access fun, lifestyle, and travel from a single platform via ticketing.",
-    imgUrl: deelaa,
-    finished: true,
-    width: "470px",
-    tags: ["Web Development"],
-  },
+  // {
+  //   id: "2",
+  //   name: "Deelaa",
+  //   year: "2022",
+  //   description:
+  //     "Deelaa makes it easy for fun seekers to access fun, lifestyle, and travel from a single platform via ticketing.",
+  //   imgUrl: deelaa,
+  //   finished: true,
+  //   width: "470px",
+  //   tags: ["Web Development"],
+  // },
   {
     id: "3",
     name: "ScholarX",

@@ -25,9 +25,15 @@
   justify-content: space-between;
   margin-top: 48px;
 }
+.mobile-cards {
+  display: none;
+}
 .gradient-container {
   margin-top: 130px;
   position: relative;
+}
+.mobile-swiggly {
+  display: none;
 }
 .star_1,
 .star_3 {
@@ -46,4 +52,52 @@
 .star_3 {
   right: 160px;
   top: -5px;
+}
+
+@media screen and (max-width: 480px) {
+  .section-container {
+    margin: 48px 0px;
+  }
+  .section-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+    width: 296px;
+    align-self: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .section-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    width: 296px;
+    margin-top: 4px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .cards {
+    display: none;
+  }
+  .star_1,
+  .star_2,
+  .star_3 {
+    display: none;
+  }
+  .swiggly {
+    display: none;
+  }
+  .gradient-container {
+    margin-top: 64px;
+    width: 100%;
+  }
+  .mobile-swiggly {
+    display: block;
+  }
+  .mobile-cards {
+    display: block;
+    margin-top: 48px;
+  }
 }

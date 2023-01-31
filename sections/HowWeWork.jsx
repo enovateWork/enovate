@@ -1,10 +1,12 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/HowWeWork.module.css";
 import arrowRight from "../public/arrow-right-gray.svg";
 import { workData } from "../workData";
+import { motion, easeInOut } from "framer-motion";
 
 const HowWeWork = () => {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <div className={styles["section-container"]}>
       <h3 className={styles["section-title"]}> How we work </h3>
@@ -25,14 +27,22 @@ const HowWeWork = () => {
         <h4 className={styles["profit-title"]}>
           Let’s help your business increase profits
         </h4>
-        <button className={styles.btn}>
+        <motion.button
+          onMouseOver={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          animate={{
+            gap: isHovered ? "10px" : 0,
+            transition: { duration: 0.7, ease: easeInOut },
+          }}
+          className={styles.btn}
+        >
           {" "}
           Work with us{" "}
-          <span className={styles.arrow}>
+          <div className={styles.arrow}>
             {" "}
             <Image src={arrowRight} alt="arrow-right" />{" "}
-          </span>{" "}
-        </button>
+          </div>{" "}
+        </motion.button>
       </div>
     </div>
   );

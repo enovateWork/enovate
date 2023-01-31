@@ -12,7 +12,7 @@ function Video() {
         Let’s help you build a brand that customers love and competitors envy
       </h3>
       <div className={styles["video_container"]}>
-        <Image src={player} alt="enovate_video" height={564} width={1000} />
+        {/* <Image src={player} alt="enovate_video" height={564} width={1000} /> */}
       </div>
       {/* </div> */}
     </div>

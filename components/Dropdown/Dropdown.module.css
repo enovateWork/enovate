@@ -67,6 +67,9 @@
   margin-top: 8px;
   color: #767676;
 }
+.inactive {
+  pointer-events: none;
+}
 
 .bottom {
   display: flex;
@@ -87,4 +90,21 @@
   padding: 16px;
   border: none;
   color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .dropdown-container {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    padding: 16px;
+  }
+  .btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    line-height: 19px;
+    margin-top: 32px;
+  }
 }

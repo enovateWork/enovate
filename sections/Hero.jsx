@@ -1,11 +1,15 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/Hero.module.css";
-import arrowRight from "../public/arrow-right.svg";
+import arrowRight from "../public/arrow-right-gray.svg";
 import mouse from "../public/mouse-solid.svg";
 import star from "../public/star.svg";
+import { easeInOut, motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 function Hero() {
+  const [isHovered, setIsHovered] = useState(false);
+  const route = useRouter();
   return (
     <div className={styles["hero-container"]}>
       <h4 className={styles["hero-title"]}>
@@ -15,23 +19,52 @@ function Hero() {
         Enovate is an agency that specializes in design and development of
         websites, web applications and mobile apps.
       </h2>
-      <button className={styles["hero-btn"]}>
+      <motion.button
+        onMouseOver={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        animate={{
+          gap: isHovered ? "12px" : 0,
+          transition: { duration: 0.7, ease: easeInOut },
+        }}
+        className={styles["hero-btn"]}
+        onClick={(e) => {
+          e.preventDefault();
+          route.push("/contact");
+        }}
+      >
         Let&#39;s create something together
-        <span className={styles["arrow-container"]}>
-          <Image src={arrowRight} alt="arrow-right" />
-        </span>
-      </button>
+        <div className={styles["arrow-container"]}>
+          <Image
+            className={styles["arrow-svg"]}
+            src={arrowRight}
+            alt="arrow-right"
+          />
+        </div>
+      </motion.button>
       <div className={styles["hero-bottom"]}>
-        <div className={styles["bottom-text"]}>
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ repeat: Infinity, duration: 20 }}
+          className={styles["star-container"]}
+        >
+          <Image className={styles["hero-star"]} src={star} alt="star" />
+        </motion.div>
+        <motion.div
+          animate={{ opacity: 0.5 }}
+          transition={{
+            duration: 5,
+            delay: 0.1,
+            repeat: Infinity,
+            ease: easeInOut,
+          }}
+          className={styles["bottom-text"]}
+        >
           <p className={styles["get-fascinated"]}>
             {" "}
             Scroll down and get fascinated
           </p>
           <Image src={mouse} alt="mouse_svg" />
-        </div>
-        <div className={styles["star-container"]}>
-          <Image src={star} alt="star" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

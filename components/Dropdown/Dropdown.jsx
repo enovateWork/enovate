@@ -8,7 +8,6 @@ import { useDispatch } from "react-redux";
 import { dropDownAction } from "../../redux/slice/dropDownSlice";
 
 const Dropdown = () => {
-  //   const [showDropdown, setShowDropdown] = useState(true);
   const dispatch = useDispatch();
   const closeDropDown = () => {
     dispatch(dropDownAction.toggle());
@@ -27,29 +26,39 @@ const Dropdown = () => {
           <ul className={styles["footer-links"]}>
             <li className={styles.link}>
               {" "}
-              <Link href="/about-us">Home</Link>{" "}
+              <Link href="/" onClick={closeDropDown}>
+                Home
+              </Link>{" "}
             </li>
             <li className={styles.link}>
               {" "}
-              <Link href="/about-us">About</Link>{" "}
+              <Link href="/about" onClick={closeDropDown}>
+                About
+              </Link>{" "}
             </li>
             <li className={styles.link}>
               {" "}
-              <Link href="/contact-us">Contact</Link>{" "}
+              <Link href="/contact" onClick={closeDropDown}>
+                Contact
+              </Link>{" "}
             </li>
             <li
               style={{ color: "#767676", fontWeight: 400 }}
-              className={styles.link}
+              className={`${styles.link} ${styles.inactive}`}
             >
               {" "}
-              <Link href="/blog-posts">Blog</Link>{" "}
+              <Link href="" onClick={(e) => e.preventDefault()}>
+                Blog
+              </Link>{" "}
             </li>
             <li
               style={{ color: "#767676", fontWeight: 400 }}
-              className={styles.link}
+              className={`${styles.link} ${styles.inactive}`}
             >
               {" "}
-              <Link href="/success-stories">Success</Link>{" "}
+              <Link href="" onClick={(e) => e.preventDefault()}>
+                Success
+              </Link>{" "}
             </li>
           </ul>
         </div>

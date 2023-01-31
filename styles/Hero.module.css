@@ -40,15 +40,16 @@
   margin-top: 64px;
   font-feature-settings: "ss03" on;
 }
-.bg_arrow {
-  margin-top: 64px;
+.hero-btn:hover {
+  background: linear-gradient(
+    -90deg,
+    #ffffff 0%,
+    rgba(249, 249, 249, 0.8) 100%
+  );
+  cursor: pointer;
 }
 .arrow-container {
   margin-left: 16px;
-}
-.bottom-text {
-  display: flex;
-  align-items: center;
 }
 .get-fascinated {
   font-family: "Satoshi", sans-serif;
@@ -62,12 +63,74 @@
 .hero-bottom {
   display: flex;
   align-items: baseline;
-  /* margin-left: auto; */
-  /* background-color: red; */
+  position: relative;
+  margin-top: 130px;
 }
 .bottom-text {
   margin-left: 40%;
+  display: flex;
+  align-items: center;
 }
 .star-container {
-  margin-left: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .hero-container {
+    margin: 16px;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+  }
+  .hero-btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    line-height: 19px;
+    margin-top: 32px;
+    padding: 18.5px 24px;
+  }
+  .hero-star {
+    width: 120px;
+    height: auto;
+    margin: 32px 0px 16px 0px;
+  }
+  .hero-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    width: 100%;
+    margin-top: 16px;
+  }
+  .hero-bottom {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  .bottom-text,
+  .star-container {
+    margin-left: 0;
+  }
+  .star-container {
+    position: relative;
+  }
+  .bottom-text {
+    margin-right: 0;
+    margin-top: 8px;
+  }
+  .arrow-svg {
+    width: 20px;
+    height: auto;
+  }
 }

@@ -1,20 +1,24 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import Footer from "../sections/Footer";
-import Header from "../sections/Header";
-import styles from "../styles/contact.module.css";
-import arrowRight from "../public/arrow-right-gray.svg";
-import star1 from "../public/star1.svg";
-import star3 from "../public/star3.svg";
-import arrowWhite from "../public/arrow-right-white.svg";
+import Footer from "../../sections/Footer";
+import Header from "../../sections/Header";
+import styles from "../../styles/contact.module.css";
+import arrowRight from "../../public/arrow-right-gray.svg";
+import star1 from "../../public/star1.svg";
+import star3 from "../../public/star3.svg";
+import arrowWhite from "../../public/arrow-right-white.svg";
 import {
   dollarsCharges,
   foundOptions,
   nairaCharges,
   workOptions,
-} from "../formData";
+} from "../../formData";
+import { motion, easeInOut } from "framer-motion";
+import { useRouter } from "next/router";
 
 const Contact = () => {
+  const [isCollaborateBtnHovered, setIsCollaborateBtnHovered] = useState(false);
+  const [isMailBtnHovered, setIsMailBtnHovered] = useState(false);
   const [checkedDollars, setCheckedDollars] = useState(true);
   const [checkedNaira, setCheckedNaira] = useState(false);
   const [formDetails, setFormDetails] = useState({
@@ -26,6 +30,7 @@ const Contact = () => {
     email: "",
     projectDetails: "",
   });
+  const route = useRouter();
   const toggleDollar = () => {
     setCheckedDollars(false);
     setCheckedNaira(true);
@@ -43,6 +48,7 @@ const Contact = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    route.push("/contact/success");
     console.log(formDetails);
   };
   return (
@@ -50,11 +56,11 @@ const Contact = () => {
       <Header />
       <div className={styles["page-container"]}>
         <div className={styles.top}>
-          <Image src={star1} alt="star1" />
+          <Image className={styles.star} src={star1} alt="star1" />
           <div className={styles["section-title"]}>
             Let’s make it work <span className={styles.together}>together</span>
           </div>
-          <Image src={star3} alt="star3" />
+          <Image className={styles.star} src={star3} alt="star3" />
         </div>
         <form onSubmit={handleSubmit} className={styles["form-container"]}>
           <div className={styles["top-input"]}>
@@ -83,24 +89,26 @@ const Contact = () => {
           </div>
           <div className={styles["found-container"]}>
             <p className={styles.text}>I found Enovate agency using </p>
-            {foundOptions.map((found) => {
-              return (
-                <div className={styles.found} key={found.name}>
-                  <input
-                    className={styles.radio}
-                    type="radio"
-                    name="found"
-                    id={found.id}
-                    value={found.name}
-                    onChange={handleChange}
-                  />
-                  <label htmlFor={found.id} className={styles.label}>
-                    {" "}
-                    {found.name}{" "}
-                  </label>
-                </div>
-              );
-            })}
+            <div className={styles.founds}>
+              {foundOptions.map((found) => {
+                return (
+                  <div className={styles.found} key={found.name}>
+                    <input
+                      className={styles.radio}
+                      type="radio"
+                      name="found"
+                      id={found.id}
+                      value={found.name}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor={found.id} className={styles.label}>
+                      {" "}
+                      {found.name}{" "}
+                    </label>
+                  </div>
+                );
+              })}
+            </div>
           </div>
           <div className={styles["work-container"]}>
             <p className={styles.text}> I am looking for help with </p>
@@ -221,25 +229,49 @@ const Contact = () => {
               value={formDetails.projectDetails}
             />
           </div>
-          <button className={styles["collaborate-btn"]}>
+          <motion.button
+            animate={{
+              gap: isCollaborateBtnHovered ? "10px" : 0,
+              transition: { duration: 0.7, ease: easeInOut },
+            }}
+            onMouseOver={() => setIsCollaborateBtnHovered(true)}
+            onMouseLeave={() => setIsCollaborateBtnHovered(false)}
+            className={styles["collaborate-btn"]}
+          >
             {" "}
             Let&rsquo;s Collaborate!{" "}
-            <span className={styles["white-arrow"]}>
+            <div className={styles["white-arrow"]}>
               {" "}
-              <Image src={arrowWhite} alt="arrow_white" />{" "}
-            </span>{" "}
-          </button>
+              <Image
+                className={styles["arrow-svg"]}
+                src={arrowWhite}
+                alt="arrow_white"
+              />{" "}
+            </div>{" "}
+          </motion.button>
         </form>
         <div className={styles["deliver-container"]}>
           <h4 className={styles["profit-title"]}>Do you have more questions</h4>
-          <button className={styles.btn}>
+          <motion.button
+            animate={{
+              gap: isMailBtnHovered ? "10px" : 0,
+              transition: { duration: 0.7, ease: easeInOut },
+            }}
+            onMouseOver={() => setIsMailBtnHovered(true)}
+            onMouseLeave={() => setIsMailBtnHovered(false)}
+            className={styles.btn}
+          >
             {" "}
             Shoot us a mail{" "}
-            <span className={styles.arrow}>
+            <div className={styles.arrow}>
               {" "}
-              <Image src={arrowRight} alt="arrow-right" />{" "}
-            </span>{" "}
-          </button>
+              <Image
+                className={styles["arrow-svg"]}
+                src={arrowRight}
+                alt="arrow-right"
+              />{" "}
+            </div>{" "}
+          </motion.button>
         </div>
         <Footer />
       </div>

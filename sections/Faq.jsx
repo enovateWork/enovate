@@ -6,12 +6,13 @@ import plus from "../public/plus.svg";
 import minus from "../public/minus.svg";
 import chat from "../public/chat.svg";
 import arrowRight from "../public/arrow-right-gray.svg";
+import { easeInOut, motion } from "framer-motion";
 
 function Faq() {
   const [showAnswer, setShowAnswer] = useState({});
+  const [isHovered, setIsHovered] = useState(false);
   const toggleAnswer = (id) => {
     setShowAnswer({
-      //   ...showAnswer,
       [id]: !showAnswer[id],
     });
   };
@@ -52,13 +53,25 @@ function Faq() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
             lacus dignissim lacus, sed feugiat dui odio.{" "}
           </p>
-          <button className={styles["email-btn"]}>
+          <motion.button
+            onMouseOver={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            animate={{
+              gap: isHovered ? "12px" : 0,
+              transition: { duration: 0.7, ease: easeInOut },
+            }}
+            className={styles["email-btn"]}
+          >
             Shoot us an email{" "}
-            <span className={styles["arrow-right"]}>
+            <div className={styles["arrow-right"]}>
               {" "}
-              <Image src={arrowRight} alt="arrow-right" />{" "}
-            </span>
-          </button>
+              <Image
+                className={styles["arrow-svg"]}
+                src={arrowRight}
+                alt="arrow-right"
+              />{" "}
+            </div>
+          </motion.button>
         </div>
       </div>
     </div>

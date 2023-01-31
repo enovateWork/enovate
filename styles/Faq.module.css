@@ -10,6 +10,7 @@
   line-height: 86px;
   font-feature-settings: "ss03" on;
   color: #313131;
+  margin-bottom: 48px;
 }
 .faq-content {
   display: flex;
@@ -19,7 +20,7 @@
 .faq-container {
   padding: 24px 0px;
   border-bottom: 2px solid #f9f9f9;
-  width: 600px;
+  width: 700px;
 }
 .question {
   font-family: "Satoshi";
@@ -36,6 +37,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.answer {
+  width: 450px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  font-feature-settings: "ss03" on;
+  color: #767676;
 }
 
 .right-section {
@@ -60,18 +73,7 @@
   text-align: center;
   color: #ffffff;
 }
-.answer {
-  width: 450px;
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  align-items: flex-end;
-  font-feature-settings: "ss03" on;
-  color: #767676;
-}
+
 .details {
   width: 250px;
   font-family: "Satoshi", sans-serif;
@@ -93,12 +95,62 @@
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 27px;
   font-feature-settings: "ss03" on;
   margin-top: 48px;
   color: #767676;
+  display: flex;
+}
+.email-btn:hover {
+  background: linear-gradient(
+    -90deg,
+    #ffffff 0%,
+    rgba(249, 249, 249, 0.8) 100%
+  );
+  cursor: pointer;
 }
 .arrow-right {
-  margin-left: 16px;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 480px) {
+  .section-container {
+    margin: 96px 16px 0px 16px;
+  }
+  .section-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    width: 328px;
+    margin-bottom: 16px;
+  }
+  .faq-content {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .faq-container {
+    width: 100%;
+    padding: 16px 0px;
+  }
+  .question {
+    font-size: 16px;
+  }
+  .answer {
+    width: 80%;
+    font-size: 14px;
+  }
+  .right-section {
+    margin-top: 32px;
+    /* padding: 16px; */
+  }
+  .email-btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .arrow-svg {
+    width: 20px;
+    height: auto;
+  }
 }
