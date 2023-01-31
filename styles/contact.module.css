@@ -48,7 +48,11 @@
   display: flex;
   align-items: baseline;
 }
-.works {
+.work-container {
+  margin-bottom: 24px;
+}
+.works,
+.founds {
   display: flex;
   width: 65%;
   flex-wrap: wrap;
@@ -188,8 +192,11 @@ input[type="radio"]:checked + .label {
   color: #ffffff;
   margin-top: 32px;
 }
+.collaborate-btn:hover {
+  background: linear-gradient(-90deg, #92ebff 0%, #6ddbf3 100%);
+}
 .white-arrow {
-  margin-left: 20px;
+  margin-left: 14px;
 }
 .deliver-container {
   background: url("../public/enovatePattern.png"), #7683ee;
@@ -198,9 +205,7 @@ input[type="radio"]:checked + .label {
   background-size: cover;
   border-radius: 24px;
   padding: 64px 0px;
-  margin-top: 96px;
-  margin-left: 48px;
-  margin-right: 48px;
+  margin: 96px 48px 0px 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,6 +234,125 @@ input[type="radio"]:checked + .label {
   border-radius: 24px;
   border: none;
 }
+.btn:hover {
+  background: linear-gradient(
+    -90deg,
+    #ffffff 0%,
+    rgba(249, 249, 249, 0.8) 100%
+  );
+}
+.collaborate-btn,
+.btn {
+  display: flex;
+  align-items: center;
+}
+.collaborate-btn:hover,
+.btn:hover {
+  cursor: pointer;
+}
 .arrow {
-  margin-left: 20px;
+  margin-left: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  .page-container {
+    padding-top: 104px;
+  }
+  .top {
+    margin: 16px;
+  }
+  .star {
+    display: none;
+  }
+  .section-title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .profit-title {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+  .section-title,
+  .profit-title {
+    font-weight: 700;
+
+    line-height: 56px;
+    text-align: center;
+  }
+  .form-container {
+    margin: 48px 16px 0px 16px;
+  }
+  .text {
+    font-size: 18px;
+    margin-bottom: 8px;
+    line-height: 24px;
+  }
+  .text-input {
+    width: 100%;
+    margin: 0;
+  }
+  .top-input {
+    flex-direction: column;
+  }
+  .name-container,
+  .company-container,
+  .found-container,
+  .work-container,
+  .budget-container,
+  .email-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  .email-container {
+    gap: 8px;
+  }
+  .amount-container {
+    flex-wrap: wrap;
+  }
+  .works,
+  .founds,
+  .amount-container {
+    width: 100%;
+    margin-top: 8px;
+  }
+  .found,
+  .work {
+    margin-left: 0;
+    margin-right: 4px;
+  }
+  .found {
+    margin-bottom: 8px;
+  }
+  .under-lay {
+    margin-top: 8px;
+    margin-left: 0;
+  }
+  .currency-control {
+    gap: 16px;
+  }
+  .text-area {
+    width: 100%;
+    height: 190px;
+  }
+  .collaborate-btn,
+  .btn {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    line-height: 19px;
+    padding: 18.5px 24px;
+  }
+  .deliver-container {
+    margin: 48px 16px 0px 16px;
+    padding: 32px 0px;
+  }
+  .arrow {
+    margin-left: 12px;
+  }
+  .arrow-svg {
+    width: 20px;
+    height: auto;
+  }
 }

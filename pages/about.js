@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Header from "../sections/Header";
 import styles from "../styles/about.module.css";
 import { teamMembers } from "../teamMembers";
@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { dropDownAction } from "../redux/slice/dropDownSlice";
 import HowWeWork from "../sections/HowWeWork.jsx";
 import Footer from "../sections/Footer";
+import MemberCard from "../components/MemberCard/memberCard";
 
 function About() {
   const dispatch = useDispatch();
@@ -30,23 +31,17 @@ function About() {
             development of websites, web applications and mobile apps.
           </p>
         </div>
+        <h3 className={styles.bandwagon}>A bandwagon of amazing people</h3>
         <div className={styles["team-container"]}>
-          <h3 className={styles.bandwagon}>A bandwagon of amazing people</h3>
           {teamMembers.map((member) => {
             return (
-              <div className={styles["under-lay"]} key={member.id}>
-                <div className={styles["member"]}>
-                  <div className={styles["image-container"]}>
-                    <Image
-                      src={member.imgUrl}
-                      alt={member.name}
-                      className={styles["member-image"]}
-                    />
-                  </div>
-                  <h4 className={styles.name}> {member.name} </h4>
-                  <p className={styles.position}> {member.position} </p>
-                </div>
-              </div>
+              <MemberCard
+                id={member.id}
+                name={member.name}
+                key={member.id}
+                imgUrl={member.imgUrl}
+                position={member.position}
+              />
             );
           })}
         </div>

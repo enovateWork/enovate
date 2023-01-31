@@ -1,5 +1,6 @@
 .section-container {
   margin: 96px 48px;
+  position: relative;
 }
 .section-title {
   font-family: "Satoshi";
@@ -20,6 +21,7 @@
 .work-card {
   padding: 24px;
   width: 550px;
+  /* background-color: red; */
 }
 .title {
   font-family: "Satoshi";
@@ -77,8 +79,50 @@
   color: #767676;
   background: linear-gradient(90deg, #ffffff 0%, rgba(249, 249, 249, 0.8) 100%);
   border-radius: 24px;
+  display: flex;
   border: none;
 }
+.btn:hover {
+  background: linear-gradient(
+    -90deg,
+    #ffffff 0%,
+    rgba(249, 249, 249, 0.8) 100%
+  );
+  cursor: pointer;
+}
 .arrow {
-  margin-left: 20px;
+  margin-left: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  .section-container {
+    margin: 48px 0px;
+    padding: 0px 16px;
+  }
+  .section-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    width: 328px;
+    margin-bottom: 16px;
+  }
+  .work-card {
+    width: 100%;
+  }
+  .deliver-container {
+    padding: 24px 0px;
+  }
+
+  .profit-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    width: 328px;
+    text-align: center;
+  }
+  .btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+  }
 }

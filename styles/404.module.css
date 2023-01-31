@@ -36,6 +36,24 @@
   font-feature-settings: "ss03" on;
   color: #ffffff;
 }
-/* .btn:hover {
-  cursor: pointer;
-} */
+
+@media screen and (max-width: 480px) {
+  .text {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38.4px;
+    text-align: center;
+  }
+  .btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    line-height: 19px;
+    margin-top: 32px;
+    padding: 18.5px 24px;
+    gap: 10px;
+  }
+  .arrow-svg {
+    width: 20px;
+  }
+}

@@ -32,6 +32,7 @@
 .btn {
   padding: 16px 24px;
   margin-top: 24px;
+  display: flex;
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 500;
@@ -43,6 +44,43 @@
   border-radius: 24px;
   border: none;
 }
+.btn:hover {
+  background: linear-gradient(
+    -90deg,
+    #ffffff 0%,
+    rgba(249, 249, 249, 0.8) 100%
+  );
+  cursor: pointer;
+}
 .arrow {
-  margin-left: 20px;
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  .section-container {
+    margin: 0 16px;
+  }
+  .vector {
+    width: 600px;
+    margin-top: 16px;
+  }
+  .title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    width: 328px;
+    text-align: center;
+  }
+  .btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .arrow {
+    margin-left: 12px;
+  }
+  .arrow-svg {
+    width: 20px;
+    height: auto;
+  }
 }

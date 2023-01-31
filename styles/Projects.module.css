@@ -25,3 +25,30 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 480px) {
+  .section-container {
+    margin: 0px 16px 48px 16px;
+  }
+  .section-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    width: 296px;
+    align-self: center;
+    margin-top: 96px;
+  }
+  .section-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    width: 296px;
+    margin-top: 8px;
+    margin-bottom: 50px;
+  }
+  .project-container {
+    flex-direction: column;
+    flex-wrap: unset;
+    align-items: center;
+  }
+}

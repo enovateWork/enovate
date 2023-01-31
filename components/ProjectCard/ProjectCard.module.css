@@ -6,6 +6,9 @@
   position: relative;
   height: 480px;
 }
+.mobile-image-container {
+  display: none;
+}
 
 .project-image:hover {
   transform: scale(0.97);
@@ -19,7 +22,7 @@
   margin-top: 16px;
 }
 .project-name {
-  font-family: "Satoshi";
+  font-family: "Satoshi", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -43,7 +46,7 @@
 }
 .tag {
   padding: 4px 16px;
-  font-family: "Satoshi";
+  font-family: "Satoshi", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -71,7 +74,7 @@
   justify-content: space-between;
 }
 .year {
-  font-family: "Satoshi";
+  font-family: "Satoshi", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -89,7 +92,7 @@
   border: 1px solid #767676;
   border-radius: 24px;
   padding: 4px 8px;
-  font-family: "Satoshi";
+  font-family: "Satoshi", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -104,4 +107,42 @@
   font-feature-settings: "ss03" on;
   color: #313131;
   margin-top: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  .card-container {
+    width: 100%;
+    position: relative;
+  }
+  .details {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .project-image:hover {
+    transform: unset;
+  }
+  .mobile-image-container {
+    display: block;
+    width: 340px;
+    width: 100%;
+    height: 480px;
+    position: relative;
+  }
+  .image-container {
+    display: none;
+  }
+  .under-lay {
+    margin: 8px 8px 0px 0px;
+  }
+  .project-description {
+    width: 290px;
+    bottom: 16px;
+    right: 16px;
+  }
+  .description {
+    display: none;
+  }
+  .arrow-svg {
+    width: 20px;
+  }
 }

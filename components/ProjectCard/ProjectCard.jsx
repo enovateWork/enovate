@@ -1,7 +1,9 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./ProjectCard.module.css";
 import arrowRight from "../../public/arrow-right-long.svg";
+import { easeInOut, motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 function ProjectCard({
   imgUrl,
@@ -12,14 +14,60 @@ function ProjectCard({
   projectWidth,
   projectTag,
 }) {
+  const [isHovered, setIsHovered] = useState(false);
+  const route = useRouter();
   return (
+    // Web Project Card Container
     <div className={styles["card-container"]}>
       <div
+        onMouseOver={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
         style={{
           width: projectWidth,
         }}
         className={styles["image-container"]}
       >
+        <Image
+          src={imgUrl}
+          alt={projectName}
+          fill={true}
+          sizes={projectWidth}
+          className={styles["project-image"]}
+          style={{
+            objectFit: "cover",
+            width: "100%",
+            borderRadius: "16px",
+          }}
+        />
+        <motion.div
+          animate={{
+            opacity: isHovered ? 1 : 0,
+            y: isHovered ? 0 : 40,
+            transition: { duration: 0.6, ease: easeInOut },
+          }}
+          className={styles["project-description"]}
+        >
+          <div className={styles.top}>
+            <p className={styles.year}> {projectYear} </p>
+            {finished ? (
+              <button className={styles["view-project"]}>
+                {" "}
+                View Project{" "}
+                <span className={styles.arrow}>
+                  {" "}
+                  <Image src={arrowRight} alt="arrow-right" />{" "}
+                </span>{" "}
+              </button>
+            ) : (
+              <div className={styles["view-project"]}> Coming Soon </div>
+            )}
+          </div>
+          <p className={styles["description"]}>{description}</p>
+        </motion.div>
+      </div>
+
+      {/* Mobile Project container card */}
+      <div className={styles["mobile-image-container"]}>
         <Image
           src={imgUrl}
           alt={projectName}
@@ -36,7 +84,11 @@ function ProjectCard({
                 View Project{" "}
                 <span className={styles.arrow}>
                   {" "}
-                  <Image src={arrowRight} alt="arrow-right" />{" "}
+                  <Image
+                    className={styles["arrow-svg"]}
+                    src={arrowRight}
+                    alt="arrow-right"
+                  />{" "}
                 </span>{" "}
               </button>
             ) : (
