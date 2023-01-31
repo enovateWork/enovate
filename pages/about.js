@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 import { dropDownAction } from "../redux/slice/dropDownSlice";
 import HowWeWork from "../sections/HowWeWork.jsx";
 import Footer from "../sections/Footer";
-import MemberCard from "../components/MemberCard/memberCard";
+import MemberCard from "../components/MemberCard/MemberCard";
 
 function About() {
   const dispatch = useDispatch();
