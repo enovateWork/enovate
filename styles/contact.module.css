@@ -106,6 +106,7 @@
   background-color: transparent;
   font-family: "Satoshi";
   font-size: 16px;
+  border-radius: 0px !important;
 }
 .currency-control {
   padding: 8px;
@@ -288,7 +289,7 @@ input[type="radio"]:checked + .label {
     line-height: 24px;
   }
   .text-input {
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
   .top-input {
