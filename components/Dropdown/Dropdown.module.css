@@ -107,4 +107,15 @@
     line-height: 19px;
     margin-top: 32px;
   }
+  .link {
+    font-size: 22px;
+    line-height: auto;
+  }
+  .links {
+    margin-bottom: 24px;
+  }
+  .close-icon {
+    width: 24px;
+    height: auto;
+  }
 }

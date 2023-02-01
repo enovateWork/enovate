@@ -19,7 +19,11 @@ const Dropdown = () => {
           <p className={styles.explore}> Explore </p>
           <div onClick={closeDropDown} className={styles["control-center"]}>
             <p className={styles.close}>close</p>
-            <Image src={close} alt="close_btn" />
+            <Image
+              className={styles["close-icon"]}
+              src={close}
+              alt="close_btn"
+            />
           </div>
         </div>
         <div className={styles.links}>

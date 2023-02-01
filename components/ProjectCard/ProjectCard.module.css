@@ -82,6 +82,7 @@
   padding: 4px 16px;
   border: 1px solid #767676;
   border-radius: 24px;
+  color: #313131;
 }
 .arrow {
   margin-left: 10px;
@@ -96,6 +97,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  color: #313131;
   line-height: 16.8px;
 }
 .description {
