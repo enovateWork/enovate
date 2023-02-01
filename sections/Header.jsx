@@ -21,6 +21,8 @@ function Header() {
       const currentScroll = window.scrollY;
       if (currentScroll > prevScrollPos) {
         setDisplayNavbar(false);
+      } else if (window.screenY === 0) {
+        setDisplayNavbar(true);
       } else {
         setDisplayNavbar(true);
       }
@@ -60,7 +62,11 @@ function Header() {
             <div className={styles["header-container"]}>
               <div className={styles["left-section"]}>
                 <Link href="/" className={styles["enovate_logo_container"]}>
-                  <Image src={logo} alt="Enovate_Logo" />
+                  <Image
+                    src={logo}
+                    alt="Enovate_Logo"
+                    className={styles["header-logo"]}
+                  />
                 </Link>
                 <p className={styles["logo-description"]}>
                   {" "}
@@ -129,23 +135,14 @@ function Header() {
         <div className={styles["mobile-menu-wrapper"]}>
           <div className={styles["mobile-menu"]}>
             <div
-              onMouseOver={() => {
-                setExploreBackground(true);
-              }}
               className={styles["explore-container"]}
               onClick={toggleDropDown}
             >
               <h3 className={styles.explore}> Explore </h3>
-              {displayDropDown ? (
-                <div className={styles["explore_white_container"]}>
-                  {" "}
-                  <Image src={exploreWhiteSVG} alt="explore_svg" />{" "}
-                </div>
-              ) : (
-                <div className={styles["explore_svg_container"]}>
-                  <Image src={exploreSVG} alt="explore_svg" />
-                </div>
-              )}
+
+              <div className={styles["explore_svg_container"]}>
+                <Image src={exploreSVG} alt="explore_svg" />
+              </div>
             </div>
           </div>
         </div>

@@ -114,7 +114,7 @@ function Expertise() {
         <Image
           src={mSwiggly}
           alt="gradient"
-          width={420}
+          width={460}
           className={styles["mobile-swiggly"]}
         />
         <motion.div

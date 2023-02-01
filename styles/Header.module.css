@@ -75,6 +75,10 @@
     align-items: center;
     justify-content: center;
   }
+  .header-logo {
+    width: 150px;
+    height: auto;
+  }
   .right-section {
     display: none;
   }
