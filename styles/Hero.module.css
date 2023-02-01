@@ -1,15 +1,13 @@
 .hero-container {
   margin: 0px 48px 24px 48px;
   padding: 64px 24px;
-  background: url("../public/gradient.png");
-  background-position: center;
-  /* background-attachment: fixed; */
-  /* background-attachment: fixed; */
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: rgb(118, 131, 238);
+  background: linear-gradient(
+    115deg,
+    rgba(118, 131, 238, 1) 0%,
+    rgba(146, 235, 255, 1) 35%,
+    rgba(103, 254, 155, 1) 94%
+  );
   border-radius: 24px;
 }
 .hero-title {
