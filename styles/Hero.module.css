@@ -1,12 +1,11 @@
 .hero-container {
   margin: 0px 48px 24px 48px;
   padding: 64px 24px;
-  background: rgb(118, 131, 238);
   background: linear-gradient(
-    115deg,
-    rgba(118, 131, 238, 1) 0%,
-    rgba(146, 235, 255, 1) 35%,
-    rgba(103, 254, 155, 1) 94%
+    165.46deg,
+    #92ebff 3.52%,
+    #8b98ff 49.35%,
+    #67fe9b 92.76%
   );
   border-radius: 24px;
 }
@@ -80,6 +79,31 @@
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+@media only screen and (max-width: 920px) and (min-width: 481px) {
+  .hero-container {
+    margin: 24px;
+    padding: 36px 24px;
+  }
+  .hero-title {
+    font-size: 74px;
+    line-height: 90px;
+  }
+  .hero-subtitle {
+    width: 80%;
+    margin-top: 24px;
+  }
+  .hero-btn {
+    margin-top: 48px;
+  }
+  .bottom-text {
+    margin-left: 35%;
+  }
+  .hero-star {
+    width: 120px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 480px) {

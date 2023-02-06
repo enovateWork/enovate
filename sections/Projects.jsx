@@ -24,7 +24,7 @@ function Projects() {
               description={project.description}
               projectName={project.name}
               projectYear={project.year}
-              projectWidth={project.width}
+              big={project.big}
               projectTag={project.tags}
             />
           );

@@ -148,6 +148,29 @@
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 920px) and (min-width: 481px) {
+  .section-container {
+    margin: 48px 24px 0px 24px;
+  }
+  .bottom {
+    width: 100%;
+    gap: 3%;
+    justify-content: unset;
+  }
+  .contact-text {
+    width: 80%;
+  }
+  .location-detail {
+    width: 100%;
+  }
+  .copyright-section {
+    margin: 24px 0px;
+  }
+  .star-svg {
+    width: 64px;
+    height: auto;
+  }
+}
 @media screen and (max-width: 480px) {
   .section-container {
     margin: 64px 16px 48px 16px;
