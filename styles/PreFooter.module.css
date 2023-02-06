@@ -3,7 +3,7 @@
   position: relative;
 }
 .vector {
-  width: 1440px;
+  width: 100%;
   height: 200px;
   object-fit: contain;
   margin-top: 96px;
@@ -54,6 +54,18 @@
 }
 .arrow {
   margin-left: 16px;
+}
+
+@media only screen and (max-width: 920px) and (min-width: 481px) {
+  .section-container {
+    margin: 0px 24px;
+  }
+  .vector {
+    margin-top: 0px;
+  }
+  .title {
+    font-size: 58px;
+  }
 }
 
 @media screen and (max-width: 480px) {

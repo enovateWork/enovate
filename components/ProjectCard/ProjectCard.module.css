@@ -1,15 +1,31 @@
-.card-container {
+.card-container,
+.big-card-container {
   margin-top: 36px;
+  display: flex;
+  flex-direction: column;
 }
-
+.card-container {
+  width: 40%;
+}
+.big-card-container {
+  width: 55%;
+}
 .image-container {
   position: relative;
   height: 480px;
+  width: 100%;
+  border-radius: 16px;
 }
-.mobile-image-container {
+.mobile-card-container,
+.tablet-project-description {
   display: none;
 }
 
+.project-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
 .project-image:hover {
   transform: scale(0.97);
   transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
@@ -110,11 +126,45 @@
   color: #313131;
   margin-top: 16px;
 }
-
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 920px) and (min-width: 481px) {
+  .big-card-container {
+    width: 100%;
+  }
   .card-container {
+    width: 49%;
+  }
+  .project-description {
+    display: none;
+  }
+  .project-image:hover {
+    transform: unset;
+  }
+  .tablet-project-description {
+    position: absolute;
+    width: 320px;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 24px rgba(118, 118, 118, 0.2);
+    backdrop-filter: blur(4px);
+    padding: 16px;
+    border-radius: 16px;
+    bottom: 16px;
+    right: 16px;
+  }
+  .description {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card-container,
+  .big-card-container {
+    display: none;
+  }
+  .mobile-card-container {
     width: 100%;
     position: relative;
+    display: block;
+    margin-top: 28px;
   }
   .details {
     flex-direction: column;
@@ -137,7 +187,7 @@
     margin: 8px 8px 0px 0px;
   }
   .project-description {
-    width: 290px;
+    width: 90%;
     bottom: 16px;
     right: 16px;
   }

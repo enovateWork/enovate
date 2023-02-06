@@ -61,7 +61,7 @@ function Footer() {
                   route.push("/contact");
                 }}
               >
-                Let&rsquo;s work together{" "}
+                Let&rsquo;s work together
                 <div className={styles.arrow}>
                   {" "}
                   <Image

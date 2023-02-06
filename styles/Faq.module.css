@@ -117,6 +117,29 @@
   margin-left: 8px;
 }
 
+@media only screen and (max-width: 920px) and (min-width: 481px) {
+  .section-container {
+    margin: 96px 24px;
+  }
+  .section-title {
+    font-size: 58px;
+    line-height: 81.2px;
+    width: 90%;
+  }
+  .faq-content {
+    gap: 3%;
+  }
+  .left-section {
+    width: 53%;
+  }
+  .faq-container {
+    width: 100%;
+  }
+  .answer {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .section-container {
     margin: 96px 16px 0px 16px;

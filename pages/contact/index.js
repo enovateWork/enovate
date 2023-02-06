@@ -15,6 +15,7 @@ import {
 } from "../../formData";
 import { motion, easeInOut } from "framer-motion";
 import { useRouter } from "next/router";
+import CustomInput from "../../components/CustomInput/CustomInput";
 
 const Contact = () => {
   const [isCollaborateBtnHovered, setIsCollaborateBtnHovered] = useState(false);
@@ -66,24 +67,26 @@ const Contact = () => {
           <div className={styles["top-input"]}>
             <div className={styles["name-container"]}>
               <p className={styles.text}>Hi, My name is </p>
-              <input
-                className={styles["text-input"]}
-                placeholder="Type your name*"
-                name="name"
-                onChange={handleChange}
+
+              <CustomInput
+                required={true}
                 value={formDetails.name}
-                required
+                onChangeHandler={handleChange}
+                name="name"
+                type="text"
+                placeHolder="Type you name*"
               />
             </div>
             <div className={styles["company-container"]}>
               <p className={styles.text}>and I currently work in </p>
-              <input
-                className={styles["text-input"]}
-                placeholder="Type your company's name*"
+
+              <CustomInput
+                required={true}
+                onChangeHandler={handleChange}
+                placeHolder="Type your company's name"
                 name="company"
                 value={formDetails.company}
-                onChange={handleChange}
-                required
+                type="text"
               />
             </div>
           </div>
@@ -204,15 +207,19 @@ const Contact = () => {
             </div>
           </div>
           <div className={styles["email-container"]}>
-            <p className={styles.text}>Kindly contact me at </p>
-            <input
-              className={styles["text-input"]}
-              placeholder="Type your email*"
-              name="email"
-              value={formDetails.email}
-              onChange={handleChange}
-              required
-            />
+            <div className={styles["top-email"]}>
+              <p className={styles.text}>Kindly contact me at </p>
+
+              <CustomInput
+                required={true}
+                onChangeHandler={handleChange}
+                placeHolder="Type your email"
+                name="email"
+                value={formDetails.email}
+                type="email"
+                pattern="[a-z0-9]+@[a-z]+.[a-z]{2,3}"
+              />
+            </div>
             <p className={styles.text}>to start the conversation.</p>
           </div>
           <div className={styles["details-container"]}>

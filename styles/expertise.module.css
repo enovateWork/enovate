@@ -54,6 +54,36 @@
   top: -5px;
 }
 
+@media only screen and (max-width: 920px) and (min-width: 481px) {
+  .section-container {
+    margin: 0px 24px;
+  }
+  .section-title {
+    font-size: 58px;
+    line-height: 81.2px;
+  }
+  .cards {
+    display: none;
+  }
+  .mobile-cards {
+    display: block;
+    margin-top: 48px;
+  }
+  .section-subtitle {
+    width: 70%;
+    margin-top: 8px;
+  }
+  .star_1,
+  .star_2,
+  .star_3 {
+    display: none;
+  }
+  .gradient-container {
+    margin-top: 64px;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .section-container {
     margin: 48px 0px;

@@ -20,8 +20,7 @@
 }
 .work-card {
   padding: 24px;
-  width: 550px;
-  /* background-color: red; */
+  width: 45%;
 }
 .title {
   font-family: "Satoshi";
@@ -94,6 +93,19 @@
   margin-left: 14px;
 }
 
+@media only screen and (max-width: 920px) and (min-width: 481px) {
+  .section-container {
+    margin: 0px 24px;
+  }
+  .work-card {
+    width: 50%;
+  }
+  .profit-title {
+    text-align: center;
+    font-size: 52px;
+    line-height: 72.8px;
+  }
+}
 @media screen and (max-width: 480px) {
   .section-container {
     margin: 48px 0px;
@@ -124,5 +136,9 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 19px;
+  }
+  .vector {
+    width: 20px;
+    height: auto;
   }
 }

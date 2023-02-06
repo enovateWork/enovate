@@ -40,7 +40,11 @@ const HowWeWork = () => {
           Work with us{" "}
           <div className={styles.arrow}>
             {" "}
-            <Image src={arrowRight} alt="arrow-right" />{" "}
+            <Image
+              src={arrowRight}
+              alt="arrow-right"
+              className={styles.vector}
+            />{" "}
           </div>{" "}
         </motion.button>
       </div>

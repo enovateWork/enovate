@@ -64,6 +64,30 @@
   color: #313131;
 }
 
+@media only screen and (max-width: 920px) and (min-width: 481px) {
+  .section-container {
+    margin: 48px 24px;
+  }
+  .section-title {
+    font-size: 58px;
+    line-height: 81.2px;
+    width: 90%;
+  }
+  .processes {
+    gap: 8px;
+  }
+  .line-frame {
+    width: 50%;
+    /* height: auto; */
+  }
+  .text {
+    width: 225px;
+    font-size: 16px;
+  }
+  .vertical-line-frame {
+    display: none;
+  }
+}
 @media screen and (max-width: 480px) {
   .section-container {
     margin: 100px 16px 0px 16px;

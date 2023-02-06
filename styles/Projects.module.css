@@ -22,8 +22,26 @@
 }
 .project-container {
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 5%;
   flex-wrap: wrap;
-  justify-content: space-between;
+}
+
+@media only screen and (max-width: 920px) and (min-width: 481px) {
+  .section-container {
+    margin: 96px 24px;
+  }
+  .section-title {
+    font-size: 58px;
+    line-height: 81.2px;
+  }
+  .section-subtitle {
+    margin-top: 8px;
+  }
+  .project-container {
+    gap: 2%;
+  }
 }
 
 @media screen and (max-width: 480px) {
