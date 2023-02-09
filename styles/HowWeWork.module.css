@@ -93,6 +93,12 @@
   margin-left: 14px;
 }
 
+@media screen and (min-width: 1600px) {
+  .detail {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 1120px) and (min-width: 481px) {
   .section-container {
     margin: 48px 24px;

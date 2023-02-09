@@ -1,9 +1,19 @@
-.dropdown-container {
+.dropdown-wrapper {
+  background: linear-gradient(
+    89.97deg,
+    rgba(146, 235, 255, 0.3) 0.02%,
+    rgba(103, 254, 155, 0.3) 50.31%,
+    rgba(139, 152, 255, 0.3) 99.98%
+  );
   position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1px;
+  border-radius: 16px;
+}
+.dropdown-container {
   display: flex;
   flex-direction: column;
-  right: 0;
-  top: 0;
   width: 350px;
   height: fit-content;
   padding: 24px;
@@ -93,11 +103,20 @@
 }
 
 @media screen and (max-width: 480px) {
-  .dropdown-container {
+  .dropdown-wrapper {
+    background: linear-gradient(
+      89.97deg,
+      rgba(146, 235, 255, 0.3) 0.02%,
+      rgba(103, 254, 155, 0.3) 50.31%,
+      rgba(139, 152, 255, 0.3) 99.98%
+    );
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
     position: fixed;
+  }
+  .dropdown-container {
+    width: 100%;
     padding: 16px;
   }
   .btn {

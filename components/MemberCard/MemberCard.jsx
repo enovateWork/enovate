@@ -24,8 +24,10 @@ const MemberCard = ({ id, imgUrl, name, position }) => {
             className={styles["member-image"]}
           />
         </div>
-        <h4 className={styles.name}> {name} </h4>
-        <p className={styles.position}> {position} </p>
+        <div className={styles.details}>
+          <h4 className={styles.name}> {name} </h4>
+          <p className={styles.position}> {position} </p>
+        </div>
       </div>
     </div>
   );
