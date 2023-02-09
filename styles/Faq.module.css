@@ -17,10 +17,12 @@
   align-items: center;
   justify-content: space-between;
 }
+.left-section {
+  width: 60%;
+}
 .faq-container {
   padding: 24px 0px;
   border-bottom: 2px solid #f9f9f9;
-  width: 700px;
 }
 .question {
   font-family: "Satoshi";
@@ -117,7 +119,7 @@
   margin-left: 8px;
 }
 
-@media only screen and (max-width: 920px) and (min-width: 481px) {
+@media only screen and (max-width: 1120px) and (min-width: 481px) {
   .section-container {
     margin: 96px 24px;
   }
@@ -142,7 +144,7 @@
 
 @media screen and (max-width: 480px) {
   .section-container {
-    margin: 96px 16px 0px 16px;
+    margin: 96px 16px 48px 16px;
   }
   .section-title {
     font-weight: 500;

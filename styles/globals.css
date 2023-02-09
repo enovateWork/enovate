@@ -9,6 +9,9 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+html {
+  overscroll-behavior: none;
+}
 body {
   position: relative;
 }

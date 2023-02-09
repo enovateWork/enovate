@@ -134,7 +134,7 @@ input[type="radio"]:checked + .label {
 }
 .text-area {
   width: 600px;
-  height: 95px;
+  height: 180px;
   margin-top: 16px;
   border-radius: 16px;
   outline: none;
@@ -237,7 +237,7 @@ input[type="radio"]:checked + .label {
   margin-left: 14px;
 }
 
-@media only screen and (max-width: 920px) and (min-width: 481px) {
+@media only screen and (max-width: 1120px) and (min-width: 481px) {
   .top {
     margin: 36px 24px;
   }

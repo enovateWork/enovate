@@ -47,7 +47,7 @@ function About() {
         </div>
         <div className={styles["vector-container"]}>
           <Image
-            // width={1440}
+            width={2000}
             src={vector}
             alt="vector"
             className={styles.vector}

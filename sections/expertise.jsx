@@ -107,7 +107,7 @@ function Expertise() {
         <Image
           src={gradient}
           alt="gradient"
-          width={1280}
+          // width={2000}
           className={styles["swiggly"]}
           priority
         />
@@ -117,7 +117,7 @@ function Expertise() {
           width={460}
           className={styles["mobile-swiggly"]}
         />
-        <motion.div
+        {/* <motion.div
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 20 }}
           className={styles["star_1"]}
@@ -137,7 +137,7 @@ function Expertise() {
           className={styles["star_3"]}
         >
           <Image src={star3} alt="star_3" />
-        </motion.div>
+        </motion.div> */}
       </div>
     </>
   );

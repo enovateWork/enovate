@@ -26,7 +26,7 @@
   margin-top: 48px;
 }
 
-@media only screen and (max-width: 920px) and (min-width: 481px) {
+@media only screen and (max-width: 1120px) and (min-width: 481px) {
   .video_section_container {
     margin: 48px 24px;
     padding: 36px 24px;

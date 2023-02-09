@@ -84,7 +84,6 @@ function ProjectCard({
                 <div className={styles["view-project"]}> Coming Soon </div>
               )}
             </div>
-            <p className={styles["description"]}>{description}</p>
           </div>
         </div>
         <div className={styles["details"]}>
