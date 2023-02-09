@@ -126,7 +126,7 @@
   color: #313131;
   margin-top: 16px;
 }
-@media only screen and (max-width: 920px) and (min-width: 481px) {
+@media only screen and (max-width: 1120px) and (min-width: 481px) {
   .big-card-container {
     width: 100%;
   }
@@ -140,6 +140,9 @@
     transform: unset;
   }
   .tablet-project-description {
+    display: block;
+  }
+  .tablet-project-description {
     position: absolute;
     width: 320px;
     height: fit-content;
@@ -151,9 +154,17 @@
     bottom: 16px;
     right: 16px;
   }
+  /* .description {
+    display: none;
+  } */
+  /* .project-description {
+    width: 90%;
+    bottom: 16px;
+    right: 16px;
+  }
   .description {
     display: none;
-  }
+  } */
 }
 @media screen and (max-width: 480px) {
   .card-container,
@@ -175,7 +186,7 @@
   }
   .mobile-image-container {
     display: block;
-    width: 340px;
+    /* width: 340px; */
     width: 100%;
     height: 480px;
     position: relative;

@@ -23,6 +23,7 @@
 .cards {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   margin-top: 48px;
 }
 .mobile-cards {
@@ -31,6 +32,11 @@
 .gradient-container {
   margin-top: 130px;
   position: relative;
+}
+.swiggly {
+  width: 100%;
+  object-fit: contain;
+  height: auto;
 }
 .mobile-swiggly {
   display: none;
@@ -54,7 +60,15 @@
   top: -5px;
 }
 
-@media only screen and (max-width: 920px) and (min-width: 481px) {
+@media screen and (min-width: 1600px) {
+  .cards {
+    width: 80%;
+    margin: auto;
+    margin-top: 48px;
+  }
+}
+
+@media only screen and (max-width: 1120px) and (min-width: 481px) {
   .section-container {
     margin: 0px 24px;
   }

@@ -1,3 +1,6 @@
+.main {
+  scroll-snap-type: proximity;
+}
 .page-content {
   padding-top: 139px;
 }

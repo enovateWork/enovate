@@ -5,6 +5,7 @@
 }
 .image-container {
   width: 230px;
+  height: auto;
   position: relative;
 }
 .under-lay {
@@ -24,7 +25,7 @@
 .member-image {
   object-fit: contain;
   width: 100%;
-  height: fit-content;
+  height: auto;
   border-radius: 8px;
   background-color: white;
 }
