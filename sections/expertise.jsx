@@ -29,7 +29,7 @@ function Expertise() {
       title: "Product Design",
       bgColor: "#67FE9B",
       descprition:
-        "Enovate is an agency that specia lizes in design and development of websites, web applications and mobile apps.",
+        "We ensure the delivery of an industry-leading creative vision which provides consistency across UX & branding requirements, whilst allowing for a creative point-of-difference for your brand. We incorporate clean, responsive aesthetics to facilitate seamless and engaging browsing experiences across all platforms & devices.",
       projectImage: "/product-design.png",
     },
     {
