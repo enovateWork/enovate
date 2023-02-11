@@ -18,8 +18,8 @@ function Expertise() {
       iconLink: "/brand_identity.svg",
       title: "Brand Identity Design",
       bgColor: "#92EBFF",
-      descprition:
-        "Enovate is an agency that specia lizes in design and development of websites, web applications and mobile apps.",
+      descprition: `We create an outstanding impression on your target through our modern graphic and illustration design.
+        We provide a wide spectrum of media design such as creation of logotype, color palette and typography, social network materials, presentations, business cards, stationery, and many more. All that we can pack into the brand guidelines.`,
       projectImage: "/brand-design.png",
     },
     {
@@ -38,7 +38,7 @@ function Expertise() {
       title: "Web Design",
       bgColor: "#8B98FF",
       descprition:
-        "Enovate is an agency that specia lizes in design and development of websites, web applications and mobile apps.",
+        "We ensure all aspects of creating a high performance website are effectively considered. We are much invested in creating an experience through a user friendly and lead-generating web design.",
       projectImage: "/web-design.png",
     },
     {
@@ -48,7 +48,7 @@ function Expertise() {
       bgColor: "#6DDBF3",
       pushDown: true,
       descprition:
-        "Enovate is an agency that specia lizes in design and development of websites, web applications and mobile apps.",
+        "We have an amazing team with a depth of knowledge and experience in developing and managing complex web applications and transactional platforms.",
       projectImage: "/web-dev.png",
     },
     {
@@ -57,7 +57,7 @@ function Expertise() {
       title: "Mobile Application Development",
       bgColor: "#54EA87",
       descprition:
-        "Enovate is an agency that specia lizes in design and development of websites, web applications and mobile apps.",
+        "We take your app idea, validate it, build it, test it, get reviews, iterate and launch your app successfully. We’d also provide a first-rate support all the way, be it IOS or Android app.",
       projectImage: "/mobile-dev.png",
     },
   ];
@@ -79,8 +79,9 @@ function Expertise() {
           <h3 className={styles["section-title"]}>Our areas of expertise</h3>
           <p className={styles["section-subtitle"]}>
             {" "}
-            Enovate is an agency that specializes in design and development of
-            websites, web applications and mobile apps.{" "}
+            We provide a full suite of creative design including illustrations,
+            web design and app development services, with special care for
+            mobile.{" "}
           </p>
         </div>
         <div className={styles["cards"]}>

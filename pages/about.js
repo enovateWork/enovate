@@ -22,13 +22,28 @@ function About() {
         <div className={styles.top}>
           <h3 className={styles["page-title"]}>About us</h3>
           <p className={styles["about-details"]}>
-            Enovate is an agency that specializes in design and development of
-            websites, web applications and mobile apps. Enovate is an agency
-            that specializes in design and development of websites, web
-            applications and mobile apps. Enovate is an agency that specializes
-            in design and development of websites, web applications and mobile
-            apps. Enovate is an agency that specializes in design and
-            development of websites, web applications and mobile apps.
+            <ul>
+              <li>
+                At Enovate, the focus is always on our clients. We’re an expert
+                team that wants to build amazing innovative companies, that’s
+                why we’re a direct extension of your brand.
+              </li>
+              <li>
+                At Enovate, we walk and work with you all the way to bring your
+                idea to fruition. Collaboration is one of our key strength in
+                making this possible.
+              </li>
+              <li>
+                We’re results-oriented professionals and when it comes to
+                growing your company, no job’s too small for us, nor is any
+                challenge too big for us to handle.
+              </li>
+              <li>
+                We are remote and have great team of creative techies spread
+                across continents. We’re extremely passionate about what we do,
+                and we’re amazing at it.
+              </li>
+            </ul>
           </p>
         </div>
         <h3 className={styles.bandwagon}>A bandwagon of amazing people</h3>
