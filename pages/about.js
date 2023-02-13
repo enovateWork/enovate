@@ -21,30 +21,30 @@ function About() {
       <div onClick={closeDropDown} className={styles["page-container"]}>
         <div className={styles.top}>
           <h3 className={styles["page-title"]}>About us</h3>
-          <p className={styles["about-details"]}>
+          <div className={styles["about-details"]}>
             <ul>
-              <li>
+              <li className={styles["about-list"]}>
                 At Enovate, the focus is always on our clients. We’re an expert
                 team that wants to build amazing innovative companies, that’s
                 why we’re a direct extension of your brand.
               </li>
-              <li>
+              <li className={styles["about-list"]}>
                 At Enovate, we walk and work with you all the way to bring your
                 idea to fruition. Collaboration is one of our key strength in
                 making this possible.
               </li>
-              <li>
+              <li className={styles["about-list"]}>
                 We’re results-oriented professionals and when it comes to
                 growing your company, no job’s too small for us, nor is any
                 challenge too big for us to handle.
               </li>
-              <li>
+              <li className={styles["about-list"]}>
                 We are remote and have great team of creative techies spread
                 across continents. We’re extremely passionate about what we do,
                 and we’re amazing at it.
               </li>
             </ul>
-          </p>
+          </div>
         </div>
         <h3 className={styles.bandwagon}>A bandwagon of amazing people</h3>
         <div className={styles["team-container"]}>

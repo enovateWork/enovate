@@ -16,6 +16,7 @@ export const projects = [
     finished: true,
     big: true,
     tags: ["Web Development", "Brand Identity Design"],
+    link: "https://www.humankindorg.com",
   },
 
   {
@@ -39,6 +40,7 @@ export const projects = [
     finished: true,
     big: false,
     tags: ["Web Development"],
+    link: "https://www.cashdrive.co",
   },
   {
     id: "2",
@@ -50,6 +52,7 @@ export const projects = [
     finished: true,
     big: true,
     tags: ["Web Development"],
+    link: "https://www.scholarx.co",
   },
 
   {
@@ -72,5 +75,6 @@ export const projects = [
     finished: true,
     big: false,
     tags: ["Web Development"],
+    link: "https://www.learnam.africa",
   },
 ];

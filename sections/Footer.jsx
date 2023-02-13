@@ -24,7 +24,6 @@ function Footer() {
                 className={styles["footer-logo"]}
                 src={enovateLogo}
                 alt="enovate_logo"
-                // width="auto"
                 height="auto"
               />
               <p className={styles["logo-description"]}>
@@ -79,16 +78,16 @@ function Footer() {
                 <div className={styles["contact-icon"]}>
                   {" "}
                   <Image src={mail} alt="mail" />{" "}
-                </div>{" "}
-                hello@enovate.work{" "}
-              </div>
-              <div className={styles["contact-number"]}>
-                {" "}
-                <div className={styles["contact-icon"]}>
-                  {" "}
-                  <Image src={call} alt="call" />{" "}
-                </div>{" "}
-                +234-916-3796-328{" "}
+                </div>
+                <p
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = "mailto:HQ@enovate.work";
+                  }}
+                  className={styles.email}
+                >
+                  HQ@enovate.work
+                </p>
               </div>
             </div>
             <div className={styles["location"]}>
@@ -136,23 +135,23 @@ function Footer() {
                 <ul className={styles["footer-links"]}>
                   <li className={styles["socials-link"]}>
                     {" "}
-                    <Link href="/about-us">Instagram</Link>{" "}
+                    <Link href="">Instagram</Link>{" "}
                   </li>
                   <li className={styles["socials-link"]}>
                     {" "}
-                    <Link href="/about-us">Twitter</Link>{" "}
+                    <Link href="">Twitter</Link>{" "}
                   </li>
                   <li className={styles["socials-link"]}>
                     {" "}
-                    <Link href="/about-us">LinkedIn</Link>{" "}
+                    <Link href="">LinkedIn</Link>{" "}
                   </li>
                   <li className={styles["socials-link"]}>
                     {" "}
-                    <Link href="/about-us">Behance</Link>{" "}
+                    <Link href="">Behance</Link>{" "}
                   </li>
                   <li className={styles["socials-link"]}>
                     {" "}
-                    <Link href="/about-us">Dribbble</Link>{" "}
+                    <Link href="">Dribbble</Link>{" "}
                   </li>
                 </ul>
               </div>

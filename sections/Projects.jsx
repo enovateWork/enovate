@@ -26,6 +26,7 @@ function Projects() {
               projectYear={project.year}
               big={project.big}
               projectTag={project.tags}
+              link={project.link}
             />
           );
         })}

@@ -54,6 +54,10 @@ function Faq() {
             lacus dignissim lacus, sed feugiat dui odio.{" "}
           </p>
           <motion.button
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "mailto:HQ@enovate.work";
+            }}
             onMouseOver={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             animate={{
