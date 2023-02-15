@@ -5,7 +5,6 @@ import Image from "next/image";
 import enovateLogo from "../public/enovate_logo.svg";
 import star from "../public/star3.svg";
 import mail from "../public/mail.svg";
-import call from "../public/call.svg";
 import arrowWhite from "../public/arrow-right-white.svg";
 import Link from "next/link";
 import { motion, easeInOut } from "framer-motion";
@@ -24,11 +23,10 @@ function Footer() {
                 className={styles["footer-logo"]}
                 src={enovateLogo}
                 alt="enovate_logo"
-                // width="auto"
                 height="auto"
               />
               <p className={styles["logo-description"]}>
-                A modern agency focused on giving your clients the best
+                A modern agency focused on giving our clients the best
                 experience.
               </p>
             </Link>
@@ -79,16 +77,16 @@ function Footer() {
                 <div className={styles["contact-icon"]}>
                   {" "}
                   <Image src={mail} alt="mail" />{" "}
-                </div>{" "}
-                hello@enovate.work{" "}
-              </div>
-              <div className={styles["contact-number"]}>
-                {" "}
-                <div className={styles["contact-icon"]}>
-                  {" "}
-                  <Image src={call} alt="call" />{" "}
-                </div>{" "}
-                +234-916-3796-328{" "}
+                </div>
+                <p
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = "mailto:HQ@enovate.work";
+                  }}
+                  className={styles.email}
+                >
+                  HQ@enovate.work
+                </p>
               </div>
             </div>
             <div className={styles["location"]}>
@@ -136,23 +134,53 @@ function Footer() {
                 <ul className={styles["footer-links"]}>
                   <li className={styles["socials-link"]}>
                     {" "}
-                    <Link href="/about-us">Instagram</Link>{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.instagram.com/enovate.work/"
+                    >
+                      Instagram
+                    </Link>{" "}
                   </li>
                   <li className={styles["socials-link"]}>
                     {" "}
-                    <Link href="/about-us">Twitter</Link>{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://twitter.com/EnovateW"
+                    >
+                      Twitter
+                    </Link>{" "}
                   </li>
                   <li className={styles["socials-link"]}>
                     {" "}
-                    <Link href="/about-us">LinkedIn</Link>{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.linkedin.com/in/enovate-51499b265/"
+                    >
+                      LinkedIn
+                    </Link>{" "}
                   </li>
                   <li className={styles["socials-link"]}>
                     {" "}
-                    <Link href="/about-us">Behance</Link>{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.behance.net/enovatework"
+                    >
+                      Behance
+                    </Link>{" "}
                   </li>
                   <li className={styles["socials-link"]}>
                     {" "}
-                    <Link href="/about-us">Dribbble</Link>{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://dribbble.com/enovate"
+                    >
+                      Dribbble
+                    </Link>{" "}
                   </li>
                 </ul>
               </div>

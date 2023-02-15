@@ -4,10 +4,6 @@ import styles from "../styles/expertise.module.css";
 import Image from "next/image";
 import gradient from "../public/Subtract.png";
 import mSwiggly from "../public/mobile-swiggly.png";
-import star1 from "../public/star1.svg";
-import star2 from "../public/star2.svg";
-import star3 from "../public/star3.svg";
-import { motion } from "framer-motion";
 import CarouselScroll from "../components/CarouselScroll";
 
 function Expertise() {
@@ -18,8 +14,8 @@ function Expertise() {
       iconLink: "/brand_identity.svg",
       title: "Brand Identity Design",
       bgColor: "#92EBFF",
-      descprition:
-        "Enovate is an agency that specia lizes in design and development of websites, web applications and mobile apps.",
+      descprition: `
+        We provide a wide spectrum of media design such as creation of logotype, color palette and typography, social network materials, presentations, business cards, stationery, and many more. All that we can pack into the brand guidelines.`,
       projectImage: "/brand-design.png",
     },
     {
@@ -29,7 +25,7 @@ function Expertise() {
       title: "Product Design",
       bgColor: "#67FE9B",
       descprition:
-        "Enovate is an agency that specia lizes in design and development of websites, web applications and mobile apps.",
+        "We ensure the delivery of an industry-leading creative vision which provides consistency across UX. We incorporate clean, responsive aesthetics to facilitate seamless and engaging browsing experiences across all platforms & devices.",
       projectImage: "/product-design.png",
     },
     {
@@ -38,7 +34,7 @@ function Expertise() {
       title: "Web Design",
       bgColor: "#8B98FF",
       descprition:
-        "Enovate is an agency that specia lizes in design and development of websites, web applications and mobile apps.",
+        "We ensure all aspects of creating a high performance website are effectively considered. We are much invested in creating an experience through a user friendly and lead-generating web design.",
       projectImage: "/web-design.png",
     },
     {
@@ -48,7 +44,7 @@ function Expertise() {
       bgColor: "#6DDBF3",
       pushDown: true,
       descprition:
-        "Enovate is an agency that specia lizes in design and development of websites, web applications and mobile apps.",
+        "We have an amazing team with a depth of knowledge and experience in developing and managing complex web applications and transactional platforms.",
       projectImage: "/web-dev.png",
     },
     {
@@ -57,7 +53,7 @@ function Expertise() {
       title: "Mobile Application Development",
       bgColor: "#54EA87",
       descprition:
-        "Enovate is an agency that specia lizes in design and development of websites, web applications and mobile apps.",
+        "We take your app idea, validate it, build it, test it, get reviews, iterate and launch your app successfully. We’d also provide a first-rate support all the way, be it IOS or Android app.",
       projectImage: "/mobile-dev.png",
     },
   ];
@@ -79,8 +75,9 @@ function Expertise() {
           <h3 className={styles["section-title"]}>Our areas of expertise</h3>
           <p className={styles["section-subtitle"]}>
             {" "}
-            Enovate is an agency that specializes in design and development of
-            websites, web applications and mobile apps.{" "}
+            We provide a full suite of creative design including illustrations,
+            web design and app development services, with special care for
+            mobile.{" "}
           </p>
         </div>
         <div className={styles["cards"]}>
@@ -117,27 +114,6 @@ function Expertise() {
           width={460}
           className={styles["mobile-swiggly"]}
         />
-        {/* <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ repeat: Infinity, duration: 20 }}
-          className={styles["star_1"]}
-        >
-          <Image src={star1} alt="star_1" />
-        </motion.div>
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ repeat: Infinity, duration: 20 }}
-          className={styles["star_2"]}
-        >
-          <Image src={star2} alt="star_2" />
-        </motion.div>
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ repeat: Infinity, duration: 20 }}
-          className={styles["star_3"]}
-        >
-          <Image src={star3} alt="star_3" />
-        </motion.div> */}
       </div>
     </>
   );

@@ -54,8 +54,7 @@
   font-feature-settings: "ss03" on;
   color: #767676;
 }
-.contact-email,
-.contact-number {
+.contact-email {
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 400;
@@ -64,8 +63,13 @@
   align-items: center;
   line-height: 19px;
   font-feature-settings: "ss03" on;
-  color: #767676;
+  color: #313131;
   margin-bottom: 16px;
+}
+.email:hover {
+  color: #767676;
+  cursor: pointer;
+  border-bottom: #767676 dashed 1px;
 }
 .contact-icon {
   margin-right: 8px;
@@ -148,7 +152,7 @@
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 920px) and (min-width: 481px) {
+@media only screen and (max-width: 1120px) and (min-width: 481px) {
   .section-container {
     margin: 48px 24px 0px 24px;
   }

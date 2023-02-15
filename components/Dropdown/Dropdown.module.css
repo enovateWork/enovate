@@ -77,6 +77,9 @@
   margin-top: 8px;
   color: #767676;
 }
+.socials-link:hover {
+  color: #313131;
+}
 .inactive {
   pointer-events: none;
 }

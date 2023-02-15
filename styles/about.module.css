@@ -3,7 +3,8 @@
   position: relative;
 }
 .top {
-  width: 900px;
+  width: 65%;
+  /* background-color: red; */
   margin: auto;
   margin-top: 48px;
   text-align: center;
@@ -24,6 +25,11 @@
   font-size: 20px;
   line-height: 27px;
   color: #767676;
+  /* background-color: rebeccapurple; */
+}
+.about-list {
+  margin-bottom: 8px;
+  list-style: none;
 }
 .bandwagon {
   font-family: "Satoshi";
@@ -93,6 +99,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
+    margin-top: 16px;
     text-align: center;
   }
   .bandwagon {

@@ -16,8 +16,8 @@ function Hero() {
         We create stunning and timeless experiences
       </h4>
       <h2 className={styles["hero-subtitle"]}>
-        Enovate is an agency that specializes in design and development of
-        websites, web applications and mobile apps.
+        We’re Enovate, more than an agency, we specialize in creative design and
+        development of websites, web applications and mobile apps.
       </h2>
       <motion.button
         onMouseOver={() => setIsHovered(true)}

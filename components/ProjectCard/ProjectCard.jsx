@@ -4,6 +4,7 @@ import styles from "./ProjectCard.module.css";
 import arrowRight from "../../public/arrow-right-gray.svg";
 import { easeInOut, motion } from "framer-motion";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 function ProjectCard({
   imgUrl,
@@ -13,6 +14,7 @@ function ProjectCard({
   finished,
   big,
   projectTag,
+  link,
 }) {
   const [isHovered, setIsHovered] = useState(false);
   const route = useRouter();
@@ -35,7 +37,6 @@ function ProjectCard({
             src={imgUrl}
             alt={projectName}
             fill={true}
-            // sizes={projectWidth}
             className={styles["project-image"]}
           />
           <motion.div
@@ -49,14 +50,18 @@ function ProjectCard({
             <div className={styles.top}>
               <p className={styles.year}> {projectYear} </p>
               {finished ? (
-                <button className={styles["view-project"]}>
-                  {" "}
-                  View Project{" "}
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={link}
+                  className={styles["view-project"]}
+                >
+                  View Project
                   <span className={styles.arrow}>
                     {" "}
                     <Image src={arrowRight} alt="arrow-right" />{" "}
                   </span>{" "}
-                </button>
+                </Link>
               ) : (
                 <div className={styles["view-project"]}> Coming Soon </div>
               )}
@@ -68,18 +73,18 @@ function ProjectCard({
             <div className={styles.top}>
               <p className={styles.year}> {projectYear} </p>
               {finished ? (
-                <button className={styles["view-project"]}>
-                  {" "}
-                  View Project{" "}
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={link}
+                  className={styles["view-project"]}
+                >
+                  View Project
                   <span className={styles.arrow}>
                     {" "}
-                    <Image
-                      className={styles["arrow-svg"]}
-                      src={arrowRight}
-                      alt="arrow-right"
-                    />{" "}
+                    <Image src={arrowRight} alt="arrow-right" />{" "}
                   </span>{" "}
-                </button>
+                </Link>
               ) : (
                 <div className={styles["view-project"]}> Coming Soon </div>
               )}
@@ -113,9 +118,13 @@ function ProjectCard({
             <div className={styles.top}>
               <p className={styles.year}> {projectYear} </p>
               {finished ? (
-                <button className={styles["view-project"]}>
-                  {" "}
-                  View Project{" "}
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={link}
+                  className={styles["view-project"]}
+                >
+                  View Project
                   <span className={styles.arrow}>
                     {" "}
                     <Image
@@ -124,7 +133,7 @@ function ProjectCard({
                       alt="arrow-right"
                     />{" "}
                   </span>{" "}
-                </button>
+                </Link>
               ) : (
                 <div className={styles["view-project"]}> Coming Soon </div>
               )}

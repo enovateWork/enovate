@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React, { useState } from "react";
 import Header from "../sections/Header";
 import styles from "../styles/about.module.css";
 import { teamMembers } from "../teamMembers";
@@ -21,15 +20,30 @@ function About() {
       <div onClick={closeDropDown} className={styles["page-container"]}>
         <div className={styles.top}>
           <h3 className={styles["page-title"]}>About us</h3>
-          <p className={styles["about-details"]}>
-            Enovate is an agency that specializes in design and development of
-            websites, web applications and mobile apps. Enovate is an agency
-            that specializes in design and development of websites, web
-            applications and mobile apps. Enovate is an agency that specializes
-            in design and development of websites, web applications and mobile
-            apps. Enovate is an agency that specializes in design and
-            development of websites, web applications and mobile apps.
-          </p>
+          <div className={styles["about-details"]}>
+            <ul>
+              <li className={styles["about-list"]}>
+                At Enovate, the focus is always on our clients. We&rsquo;re an
+                expert team that wants to build amazing innovative companies,
+                that&rsquo;s why we&rsquo;re a direct extension of your brand.
+              </li>
+              <li className={styles["about-list"]}>
+                At Enovate, we walk and work with you all the way to bring your
+                idea to fruition. Collaboration is one of our key strength in
+                making this possible.
+              </li>
+              <li className={styles["about-list"]}>
+                We&rsquo;re results-oriented professionals and when it comes to
+                growing your company, no job&rsquo;s too small for us, nor is
+                any challenge too big for us to handle.
+              </li>
+              <li className={styles["about-list"]}>
+                We are remote and have great team of creative techies spread
+                across continents. We&rsquo;re extremely passionate about what
+                we do, and we&rsquo;re amazing at it.
+              </li>
+            </ul>
+          </div>
         </div>
         <h3 className={styles.bandwagon}>A bandwagon of amazing people</h3>
         <div className={styles["team-container"]}>

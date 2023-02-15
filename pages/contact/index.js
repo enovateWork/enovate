@@ -16,6 +16,8 @@ import {
 import { motion, easeInOut } from "framer-motion";
 import { useRouter } from "next/router";
 import CustomInput from "../../components/CustomInput/CustomInput";
+import { useDispatch } from "react-redux";
+import { dropDownAction } from "../../redux/slice/dropDownSlice";
 
 const Contact = () => {
   const [isCollaborateBtnHovered, setIsCollaborateBtnHovered] = useState(false);
@@ -52,10 +54,14 @@ const Contact = () => {
     route.push("/contact/success");
     console.log(formDetails);
   };
+  const dispatch = useDispatch();
+  const closeDropdown = () => {
+    dispatch(dropDownAction.close());
+  };
   return (
     <>
       <Header />
-      <div className={styles["page-container"]}>
+      <div onClick={closeDropdown} className={styles["page-container"]}>
         <div className={styles.top}>
           <Image className={styles.star} src={star1} alt="star1" />
           <div className={styles["section-title"]}>
@@ -260,6 +266,10 @@ const Contact = () => {
         <div className={styles["deliver-container"]}>
           <h4 className={styles["profit-title"]}>Do you have more questions</h4>
           <motion.button
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "mailto:HQ@enovate.work";
+            }}
             animate={{
               gap: isMailBtnHovered ? "10px" : 0,
               transition: { duration: 0.7, ease: easeInOut },

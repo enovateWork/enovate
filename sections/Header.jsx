@@ -15,12 +15,22 @@ function Header() {
   const [displayNavbar, setDisplayNavbar] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
+  // function for the dropdown display redux action
+  const dispatch = useDispatch();
+  const toggleDropDown = () => {
+    dispatch(dropDownAction.toggle());
+  };
+
   // useEffect for the toggle of the display of the header while scrolling
   useEffect(() => {
+    const closeDropdown = () => {
+      dispatch(dropDownAction.close());
+    };
     const handleScroll = () => {
       const currentScroll = window.scrollY;
       if (currentScroll > prevScrollPos) {
         setDisplayNavbar(false);
+        closeDropdown();
       } else if (window.screenY === 0) {
         setDisplayNavbar(true);
       } else {
@@ -30,12 +40,8 @@ function Header() {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollPos]);
-  // function for the dropdown display redux action
-  const dispatch = useDispatch();
-  const toggleDropDown = () => {
-    dispatch(dropDownAction.toggle());
-  };
+  }, [prevScrollPos, dispatch]);
+
   // selector for the dropdown redux state
   const displayDropDown = useSelector(
     (state) => state.dropDown.dropDownVisible

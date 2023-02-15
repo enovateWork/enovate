@@ -10,8 +10,9 @@ function Projects() {
         <h3 className={styles["section-title"]}>Projects we are proud of</h3>
         <p className={styles["section-subtitle"]}>
           {" "}
-          Enovate is an agency that specializes in design and development of
-          websites, web applications and mobile apps.{" "}
+          At Enovate we specialize on high performance immersive digital
+          experience aimed at delivering our clients a competitive advantage. We
+          deliver industry leading solutions.{" "}
         </p>
       </div>
       <div className={styles["project-container"]}>
@@ -26,6 +27,7 @@ function Projects() {
               projectYear={project.year}
               big={project.big}
               projectTag={project.tags}
+              link={project.link}
             />
           );
         })}
