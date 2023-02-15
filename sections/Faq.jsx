@@ -50,8 +50,8 @@ function Faq() {
             Do you have any more questions?
           </h4>
           <p className={styles["details"]}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            lacus dignissim lacus, sed feugiat dui odio.{" "}
+            Feel free to write us now. We’d be glad to give adequate information
+            in response{" "}
           </p>
           <motion.button
             onClick={(e) => {

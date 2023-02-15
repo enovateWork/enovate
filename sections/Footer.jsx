@@ -5,7 +5,6 @@ import Image from "next/image";
 import enovateLogo from "../public/enovate_logo.svg";
 import star from "../public/star3.svg";
 import mail from "../public/mail.svg";
-import call from "../public/call.svg";
 import arrowWhite from "../public/arrow-right-white.svg";
 import Link from "next/link";
 import { motion, easeInOut } from "framer-motion";
@@ -27,7 +26,7 @@ function Footer() {
                 height="auto"
               />
               <p className={styles["logo-description"]}>
-                A modern agency focused on giving your clients the best
+                A modern agency focused on giving our clients the best
                 experience.
               </p>
             </Link>
@@ -135,23 +134,53 @@ function Footer() {
                 <ul className={styles["footer-links"]}>
                   <li className={styles["socials-link"]}>
                     {" "}
-                    <Link href="">Instagram</Link>{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.instagram.com/enovate.work/"
+                    >
+                      Instagram
+                    </Link>{" "}
                   </li>
                   <li className={styles["socials-link"]}>
                     {" "}
-                    <Link href="">Twitter</Link>{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://twitter.com/EnovateW"
+                    >
+                      Twitter
+                    </Link>{" "}
                   </li>
                   <li className={styles["socials-link"]}>
                     {" "}
-                    <Link href="">LinkedIn</Link>{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.linkedin.com/in/enovate-51499b265/"
+                    >
+                      LinkedIn
+                    </Link>{" "}
                   </li>
                   <li className={styles["socials-link"]}>
                     {" "}
-                    <Link href="">Behance</Link>{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.behance.net/enovatework"
+                    >
+                      Behance
+                    </Link>{" "}
                   </li>
                   <li className={styles["socials-link"]}>
                     {" "}
-                    <Link href="">Dribbble</Link>{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://dribbble.com/enovate"
+                    >
+                      Dribbble
+                    </Link>{" "}
                   </li>
                 </ul>
               </div>

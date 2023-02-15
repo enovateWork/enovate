@@ -152,7 +152,7 @@
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 920px) and (min-width: 481px) {
+@media only screen and (max-width: 1120px) and (min-width: 481px) {
   .section-container {
     margin: 48px 24px 0px 24px;
   }

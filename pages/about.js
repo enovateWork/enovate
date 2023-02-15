@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React, { useState } from "react";
 import Header from "../sections/Header";
 import styles from "../styles/about.module.css";
 import { teamMembers } from "../teamMembers";
@@ -24,9 +23,9 @@ function About() {
           <div className={styles["about-details"]}>
             <ul>
               <li className={styles["about-list"]}>
-                At Enovate, the focus is always on our clients. We’re an expert
-                team that wants to build amazing innovative companies, that’s
-                why we’re a direct extension of your brand.
+                At Enovate, the focus is always on our clients. We&rsquo;re an
+                expert team that wants to build amazing innovative companies,
+                that&rsquo;s why we&rsquo;re a direct extension of your brand.
               </li>
               <li className={styles["about-list"]}>
                 At Enovate, we walk and work with you all the way to bring your
@@ -34,14 +33,14 @@ function About() {
                 making this possible.
               </li>
               <li className={styles["about-list"]}>
-                We’re results-oriented professionals and when it comes to
-                growing your company, no job’s too small for us, nor is any
-                challenge too big for us to handle.
+                We&rsquo;re results-oriented professionals and when it comes to
+                growing your company, no job&rsquo;s too small for us, nor is
+                any challenge too big for us to handle.
               </li>
               <li className={styles["about-list"]}>
                 We are remote and have great team of creative techies spread
-                across continents. We’re extremely passionate about what we do,
-                and we’re amazing at it.
+                across continents. We&rsquo;re extremely passionate about what
+                we do, and we&rsquo;re amazing at it.
               </li>
             </ul>
           </div>
