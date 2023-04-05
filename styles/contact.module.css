@@ -1,5 +1,6 @@
 .page-container {
   padding-top: 139px;
+  /* max-width: 1920px; */
 }
 .top {
   display: flex;
